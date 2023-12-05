@@ -1,12 +1,1 @@
 res://default_bus_layout.tres
-res://components/segment_3D/Segment_3D.tscn
-res://skybox/skybox.gdshader
-res://entities/projectile/projectile.tscn
-res://components/scripts/connection_data.gd
-res://components/way_point_3D/way_point_3d.tscn
-res://components/way_point_3D/WayPoint3D.gd
-res://components/segment_3D/Segment3D.gd
-res://components/segment_3D/segment_vertex_3d.tscn
-res://components/segment_3D/SegmentVertex3D.gd
-res://components/wall.tscn
-res://components/wall.gd
