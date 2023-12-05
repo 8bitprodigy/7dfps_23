@@ -1,0 +1,61 @@
+[gd_scene load_steps=11 format=3 uid="uid://bpjsgdditf1xx"]
+
+[ext_resource type="Script" path="res://entities/projectile/projectile.gd" id="1_7ctav"]
+[ext_resource type="Script" path="res://entities/projectile/Attack.gd" id="2_6pnwa"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dd5dw"]
+radius = 0.05
+
+[sub_resource type="Resource" id="Resource_yol6u"]
+script = ExtResource("2_6pnwa")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3xti5"]
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_wwgcn"]
+material = SubResource("StandardMaterial3D_3xti5")
+radius = 0.05
+height = 1.0
+radial_segments = 8
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_phfrt"]
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_c45w7"]
+material = SubResource("StandardMaterial3D_phfrt")
+radius = 0.1
+height = 0.2
+radial_segments = 4
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ush80"]
+shading_mode = 0
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_186r0"]
+material = SubResource("StandardMaterial3D_ush80")
+radius = 0.1
+height = 0.2
+radial_segments = 4
+rings = 1
+
+[node name="projectile" type="ShapeCast3D" groups=["cleanup", "projectiles"]]
+shape = SubResource("SphereShape3D_dd5dw")
+target_position = Vector3(0, 0, 0)
+script = ExtResource("1_7ctav")
+attack = SubResource("Resource_yol6u")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_wwgcn")
+
+[node name="start_pos" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_c45w7")
+
+[node name="end_pos" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_186r0")

@@ -1,0 +1,6 @@
+Marker3D
+MeshInstance3D
+Label
+Node
+CollisionShape3D
+ShapeCast3D

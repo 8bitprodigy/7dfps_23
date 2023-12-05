@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7mjiglscaxu5"]
+
+[ext_resource type="Script" path="res://components/way_point_3D/WayPoint3D.gd" id="1_v3w8r"]
+
+[node name="WayPoint3D" type="Marker3D"]
+script = ExtResource("1_v3w8r")

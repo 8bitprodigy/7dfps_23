@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf4gm48ovdnm0"]
+
+[ext_resource type="Script" path="res://components/segment_3D/Segment3D.gd" id="1_cym1x"]
+
+[node name="Segment3D" type="Marker3D"]
+script = ExtResource("1_cym1x")
