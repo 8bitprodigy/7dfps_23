@@ -21,9 +21,9 @@ enum {
 }
 
 @export var connections : Array[WaypointConnectionData]
-@export var walls       : Array[Wall]
+@export var walls       : Array[Wall3D]
 @export var vertices    : Array[SegmentVertex3D]
-@export var center      : WayPoint3D
+@export var center      : Waypoint3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
