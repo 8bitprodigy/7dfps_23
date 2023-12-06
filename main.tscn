@@ -89,7 +89,6 @@ popup/item_1/text = "Local"
 popup/item_1/id = 1
 
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://entities/projectile.tscn")
 spawn_path = NodePath("../level")
 
 [connection signal="pressed" from="UI/connection_menu/MarginContainer/VBoxContainer/btn_host" to="." method="_on_btn_host_pressed"]

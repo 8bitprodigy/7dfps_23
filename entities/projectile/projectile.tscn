@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=3 uid="uid://bpjsgdditf1xx"]
 
 [ext_resource type="Script" path="res://entities/projectile/projectile.gd" id="1_7ctav"]
-[ext_resource type="Script" path="res://entities/projectile/Attack.gd" id="2_6pnwa"]
+[ext_resource type="Script" path="res://entities/projectile/Attack.gd" id="2_500uc"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_dd5dw"]
 radius = 0.05
 
 [sub_resource type="Resource" id="Resource_yol6u"]
-script = ExtResource("2_6pnwa")
+script = ExtResource("2_500uc")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3xti5"]
 shading_mode = 0
