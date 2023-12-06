@@ -1,1 +1,17 @@
 res://default_bus_layout.tres
+res://entities/debug_arrow.res
+res://components/levels/level_3d.tscn
+res://components/levels/level_3d.gd
+res://components/levels/wall.gd
+res://components/levels/wall_3D.tscn
+res://components/levels/way_point_3d.tscn
+res://components/levels/WayPoint3D.gd
+res://components/levels/waypoint_3d.tscn
+res://main.gd
+res://components/projectile_emitter/projectile_emitter.gd
+res://components/levels/Segment3D.gd
+res://components/levels/SegmentVertex3D.gd
+res://components/levels/wall3D.gd
+res://main.tscn
+res://components/levels/segment_vertex_3d.tscn
+res://components/levels/Segment_3D.tscn
