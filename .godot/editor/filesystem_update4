@@ -15,3 +15,10 @@ res://components/levels/wall3D.gd
 res://main.tscn
 res://components/levels/segment_vertex_3d.tscn
 res://components/levels/Segment_3D.tscn
+res://addons/deformable_block_3D/DeformableBlock3D.gd
+res://addons/deformable_block_3D/level_3d.tscn
+res://addons/deformable_block_3D/level_3d.gd
+res://addons/deformable_block_3D/segment_vertex_3d.tscn
+res://addons/deformable_block_3D/Segment3D.gd
+res://addons/deformable_block_3D/Segment_3D.tscn
+res://addons/deformable_block_3D/wall3D.gd

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b7j0flbug5u0k"]
 
-[ext_resource type="Script" path="res://components/levels/wall3D.gd" id="1_xpjww"]
+[ext_resource type="Script" path="res://addons/deformable_block_3D/wall3D.gd" id="1_xpjww"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_unkit"]
 

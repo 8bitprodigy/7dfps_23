@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjme68r2j7f6t"]
+
+[ext_resource type="Script" path="res://addons/deformable_block_3D/level_3d.gd" id="1_k3igq"]
+
+[node name="Level3D" type="Marker3D"]
+script = ExtResource("1_k3igq")
+
+[node name="segments" type="Node" parent="."]
+
+[node name="vertices" type="Node" parent="."]
+
+[node name="waypoints" type="Node" parent="."]
+
+[node name="sides" type="Node" parent="."]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf4gm48ovdnm0"]
+
+[ext_resource type="Script" path="res://addons/deformable_block_3D/Segment3D.gd" id="1_d27qn"]
+
+[node name="Segment3D" type="Area3D"]
+script = ExtResource("1_d27qn")

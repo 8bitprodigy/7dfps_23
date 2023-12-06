@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cjme68r2j7f6t"]
-
-[ext_resource type="Script" path="res://components/levels/level_3d.gd" id="1_k3igq"]
-
-[node name="Level3D" type="Marker3D"]
-script = ExtResource("1_k3igq")
