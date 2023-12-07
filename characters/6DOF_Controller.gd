@@ -28,7 +28,6 @@ func _ready():
 
 func _enter_tree():
 	if Engine.is_editor_hint(): return
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	#prints("Player: ", player)
 	$Label3D.text = str(player)
 

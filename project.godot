@@ -21,6 +21,7 @@ MultiplayerManager="*res://autoload/multiplayer_manager.gd"
 Common="*res://autoload/common.gd"
 WindowManager="*res://addons/nodot/autoload/WindowManager.gd"
 SaveManager="*res://addons/nodot/autoload/SaveManager.gd"
+CyclopsAutoload="*res://addons/cyclops_level_builder/cyclops_global_scene.tscn"
 
 [display]
 
@@ -28,7 +29,7 @@ window/size/initial_position_type=3
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/deformable_block_3D/plugin.cfg")
+enabled=PackedStringArray("res://addons/cyclops_level_builder/plugin.cfg", "res://addons/deformable_block_3D/plugin.cfg")
 
 [input]
 

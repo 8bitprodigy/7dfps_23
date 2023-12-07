@@ -79,7 +79,7 @@ func _process(delta):
 	pass
 
 
-func insert_segment(segment:Segment3D=null, direction:Vector3=Vector3.ZERO):
+func insert_new_segment(segment:Segment3D=null, direction:Vector3=Vector3.ZERO):
 	if !segment: # Placing starting segment
 		add_vertices(Vector3.UP)
 		add_vertices(Vector3.DOWN)
