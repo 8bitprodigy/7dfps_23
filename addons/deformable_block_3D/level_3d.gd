@@ -3,10 +3,10 @@ extends Marker3D
 class_name Level3D
 
 # Declare prototypes to instantiate
-var segment : PackedScene = preload("res://addons/deformable_block_3D/Segment_3D.tscn")
-var vertex  : PackedScene = preload("res://addons/deformable_block_3D/segment_vertex_3d.tscn")
-var waypoint: PackedScene = preload("res://addons/deformable_block_3D/waypoint_3d.tscn")
-var side    : PackedScene = preload("res://addons/deformable_block_3D/wall_3D.tscn")
+var segment_prototype  : PackedScene = preload("res://addons/deformable_block_3D/Segment_3D.tscn")
+var vertex_prototype   : PackedScene = preload("res://addons/deformable_block_3D/segment_vertex_3d.tscn")
+var waypoint_prototype : PackedScene = preload("res://addons/deformable_block_3D/waypoint_3d.tscn")
+var side_prototype     : PackedScene = preload("res://addons/deformable_block_3D/wall_3D.tscn")
 
 # Nodes to add those instantiations to as children
 var segments_node  : Node = Node.new()
@@ -15,10 +15,10 @@ var waypoints_node : Node = Node.new()
 var sides_node     : Node = Node.new()
 
 # Arrays to keep track of those instantiations for quick access.
-var segments_array : Array[Segment3D]
-var vertices_array : Array[SegmentVertex3D]
-var waypoints_array: Array[Waypoint3D]
-var sides_array    : Array[Wall3D]
+@export var segments_array : Array[Segment3D]
+@export var vertices_array : Array[SegmentVertex3D]
+@export var waypoints_array: Array[Waypoint3D]
+@export var sides_array    : Array[Wall3D]
 
 enum {
 	SEL_SEGMENT,
@@ -27,6 +27,9 @@ enum {
 	SEL_side
 }
 
+var navigation       : AStar3D
+
+@export var root_segment     : Segment3D
 var selected_segment : Segment3D
 
 
@@ -76,21 +79,36 @@ func _process(delta):
 	pass
 
 
-func add_segment_vertex(vertex:SegmentVertex3D):
-	segments_node.add_child(vertex)
-	segments_array.append(vertex)
-
-
-func add_side(side:Wall3D):
-	sides_node.add_child(side)
-	sides_array.append(side)
+func insert_segment(segment:Segment3D=null, direction:Vector3=Vector3.ZERO):
+	if !segment: # Placing starting segment
+		add_vertices(Vector3.UP)
+		add_vertices(Vector3.DOWN)
+		var new_segment = segment_prototype.instantiate()
+		new_segment.global_position = Vector3.ZERO
+		add_segment(new_segment)
+	pass
 
 
 func add_segment(segment:Segment3D):
 	segments_node.add_child(segment)
 	segments_array.append(segment)
+	selected_segment = segment
+
+
+func add_vertices(direction:Vector3):
+	var vertices = Array[SegmentVertex3D]
+
+
+func add_vertex(vertex:SegmentVertex3D):
+	segments_node.add_child(vertex)
+	segments_array.append(vertex)
 
 
 func add_waypoint(waypoint:Waypoint3D):
 	waypoints_node.add_child(waypoint)
 	waypoints_array.append(waypoint)
+
+
+func add_side(side:Wall3D):
+	sides_node.add_child(side)
+	sides_array.append(side)

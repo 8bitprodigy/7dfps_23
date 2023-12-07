@@ -69,7 +69,16 @@ const default_vertices: Array[Vector3] = [
 
 @export var connections : Array[WaypointConnectionData]
 @export var walls       : Array[Wall3D]
-@export var vertices    : Array[SegmentVertex3D]
+@export var vertices    : Dictionary = {
+	TOP_NE : SegmentVertex3D,
+	TOP_SE : SegmentVertex3D,
+	TOP_SW : SegmentVertex3D,
+	TOP_NW : SegmentVertex3D,
+	BOT_NE : SegmentVertex3D,
+	BOT_SE : SegmentVertex3D,
+	BOT_SW : SegmentVertex3D,
+	BOT_NW : SegmentVertex3D 
+}
 @export var center      : Waypoint3D
 @export var entities    : Array
 
@@ -77,20 +86,21 @@ var collision_shape : CollisionShape3D = CollisionShape3D.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	add_child(collision_shape)
 	pass
 
 
-func init(segment_vertices:Array[SegmentVertex3D]):
-	if !segment_vertices.size() != 8:
+func init(segment_vertices:Dictionary):
+	if segment_vertices.size() != 8:
 		assert(false,"Failed to initialize Segment3D -- vertex array either too big or too small!")
-	add_child(collision_shape)
+	for i in range(0,7):
+		vertices[i] = segment_vertices[i]
+	update_collision_shape()
+
+func update_collision_shape():
+	if vertices.size() != 8:
+		assert(false,"Failed to initialize Segment3D -- vertex array either too big or too small!")
 	var new_shape : ConvexPolygonShape3D = ConvexPolygonShape3D.new()
-	for vertex in segment_vertices:
+	for vertex in vertices:
 		new_shape.points.append(vertex.global_position)
 	collision_shape.set_shape(new_shape)
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
