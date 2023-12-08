@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c675enhujygcv"]
+
+[ext_resource type="Texture2D" uid="uid://cji6avq80o1uj" path="res://art/textures/brick1.png" id="1_gedh3"]
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_gedh3")
+metallic_specular = 0.0
+roughness = 0.0
+uv1_world_triplanar = true

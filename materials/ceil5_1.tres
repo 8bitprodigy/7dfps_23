@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b5hywxgqw5o2n"]
+
+[ext_resource type="Texture2D" uid="uid://dkd0aqlo0gnt7" path="res://art/textures/ceil5_1.png" id="1_5vecc"]
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_5vecc")
+metallic_specular = 0.0
+roughness = 0.0
+uv1_world_triplanar = true

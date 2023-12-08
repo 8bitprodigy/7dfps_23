@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b884omrc8tbce"]
+
+[ext_resource type="Texture2D" uid="uid://bxi7jy3s5vgfm" path="res://art/textures/step1.png" id="1_k5bmk"]
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_k5bmk")
+metallic_specular = 0.0
+roughness = 0.0
+uv1_world_triplanar = true

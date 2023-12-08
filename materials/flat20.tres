@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bq8cqdgkowyl2"]
+
+[ext_resource type="Texture2D" uid="uid://bsxwgq1t8vb18" path="res://art/textures/flat20.png" id="1_hskvr"]
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_hskvr")
+metallic_specular = 0.0
+roughness = 0.0
+uv1_world_triplanar = true
