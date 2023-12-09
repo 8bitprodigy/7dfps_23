@@ -1,10 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://x2oipwd6ya1d"]
 
-[ext_resource type="Material" uid="uid://dha2r7hl335jt" path="res://materials/tlite6_1.tres" id="1_7q1o0"]
+[ext_resource type="Material" uid="uid://bd2iktmwxl5qd" path="res://materials/animated/watrfall.tres" id="1_es84q"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_0uxmo"]
+size = Vector2(1, 2)
 
 [node name="Node3D" type="MeshInstance3D"]
 transform = Transform3D(-1, -1.49012e-08, 8.9407e-08, 8.05285e-09, 1, 5.96046e-08, -7.34748e-08, 2.98023e-08, -1, 0.5, 0.5, -0.5)
-material_override = ExtResource("1_7q1o0")
+material_override = ExtResource("1_es84q")
 mesh = SubResource("QuadMesh_0uxmo")

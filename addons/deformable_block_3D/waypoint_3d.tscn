@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c7mjiglscaxu5"]
 
-[ext_resource type="Script" path="res://addons/deformable_block_3D/WayPoint3D.gd" id="1_pp57e"]
+[ext_resource type="Script" path="res://addons/deformable_block_3D/Waypoint3D.gd" id="1_va4rr"]
 
 [node name="Waypoint3D" type="Marker3D"]
-script = ExtResource("1_pp57e")
+script = ExtResource("1_va4rr")

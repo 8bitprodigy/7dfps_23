@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://hpeuvnq0jkvk"]
+
+[ext_resource type="Texture2D" uid="uid://d2xy16kdw004o" path="res://art/textures/animated/w64b_1.png" id="1_kcrnr"]
+[ext_resource type="Texture2D" uid="uid://cpojrgn2hyvml" path="res://art/textures/animated/w64b_2.png" id="2_f24xd"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_q3es3"]
+frames = 2
+frame_0/texture = ExtResource("1_kcrnr")
+frame_0/duration = 0.25
+frame_1/texture = ExtResource("2_f24xd")
+frame_1/duration = 0.25
+
+[resource]
+shading_mode = 0
+specular_mode = 2
+albedo_texture = SubResource("AnimatedTexture_q3es3")
+uv1_world_triplanar = true

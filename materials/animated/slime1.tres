@@ -1,0 +1,23 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://btjnfp32gcbef"]
+
+[ext_resource type="Texture2D" uid="uid://cp10efb85es2m" path="res://art/textures/animated/slime01.png" id="1_5wgbw"]
+[ext_resource type="Texture2D" uid="uid://cfmuwo7v0l8ie" path="res://art/textures/animated/slime02.png" id="2_irtiq"]
+[ext_resource type="Texture2D" uid="uid://4wuqhfuireoo" path="res://art/textures/animated/slime03.png" id="3_cfqpd"]
+[ext_resource type="Texture2D" uid="uid://omqkxfv7qm12" path="res://art/textures/animated/slime04.png" id="4_6reqg"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_q3es3"]
+frames = 4
+frame_0/texture = ExtResource("1_5wgbw")
+frame_0/duration = 0.25
+frame_1/texture = ExtResource("2_irtiq")
+frame_1/duration = 0.25
+frame_2/texture = ExtResource("3_cfqpd")
+frame_2/duration = 0.25
+frame_3/texture = ExtResource("4_6reqg")
+frame_3/duration = 0.25
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = SubResource("AnimatedTexture_q3es3")
+uv1_world_triplanar = true

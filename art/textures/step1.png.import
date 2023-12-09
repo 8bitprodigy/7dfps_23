@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxi7jy3s5vgfm"
-path.s3tc="res://.godot/imported/step1.png-cef4433ec643cdced08f8f1dc2500f2a.s3tc.ctex"
+path="res://.godot/imported/step1.png-cef4433ec643cdced08f8f1dc2500f2a.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://art/textures/step1.png"
-dest_files=["res://.godot/imported/step1.png-cef4433ec643cdced08f8f1dc2500f2a.s3tc.ctex"]
+dest_files=["res://.godot/imported/step1.png-cef4433ec643cdced08f8f1dc2500f2a.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

@@ -1,8 +1,8 @@
 extends Resource
 class_name WaypointConnectionData
 
-@export_node_path("WayPoint3D") var POINT_0 : NodePath
-var point_0 : WayPoint3D
-@export_node_path("WayPoint3D") var POINT_1 : NodePath
-var point_1 : WayPoint3D
+@export_node_path("Waypoint3D") var WAYPOINT_0 : NodePath
+var waypoint_0 : Waypoint3D
+@export_node_path("Waypoint3D") var WAYPOINT_1 : NodePath
+var waypoint_1 : Waypoint3D
 var distance : float

@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bibppox8jjgie"
-path.s3tc="res://.godot/imported/cgrate1.png-4482aa7b15e3ec4fa22a90334638c74d.s3tc.ctex"
+path="res://.godot/imported/cgrate1.png-4482aa7b15e3ec4fa22a90334638c74d.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://art/textures/cgrate1.png"
-dest_files=["res://.godot/imported/cgrate1.png-4482aa7b15e3ec4fa22a90334638c74d.s3tc.ctex"]
+dest_files=["res://.godot/imported/cgrate1.png-4482aa7b15e3ec4fa22a90334638c74d.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dc0o7p7t4qchl"
-path.s3tc="res://.godot/imported/aqpanl02.png-60257ab33db52050d047c7598236fab8.s3tc.ctex"
+path="res://.godot/imported/aqpanl02.png-60257ab33db52050d047c7598236fab8.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://art/textures/aqpanl02.png"
-dest_files=["res://.godot/imported/aqpanl02.png-60257ab33db52050d047c7598236fab8.s3tc.ctex"]
+dest_files=["res://.godot/imported/aqpanl02.png-60257ab33db52050d047c7598236fab8.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

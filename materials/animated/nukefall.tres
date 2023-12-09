@@ -1,0 +1,23 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://cnqq4vayvq4kr"]
+
+[ext_resource type="Texture2D" uid="uid://bittq1mowaqsc" path="res://art/textures/animated/sfall1.png" id="1_njht0"]
+[ext_resource type="Texture2D" uid="uid://dhws5pnuvs7lr" path="res://art/textures/animated/sfall2.png" id="2_bc4wk"]
+[ext_resource type="Texture2D" uid="uid://pijnmq24wm82" path="res://art/textures/animated/sfall3.png" id="3_mso2y"]
+[ext_resource type="Texture2D" uid="uid://dde1s1qsi254n" path="res://art/textures/animated/sfall4.png" id="4_178i2"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_q3es3"]
+frames = 4
+frame_0/texture = ExtResource("1_njht0")
+frame_0/duration = 0.25
+frame_1/texture = ExtResource("2_bc4wk")
+frame_1/duration = 0.25
+frame_2/texture = ExtResource("3_mso2y")
+frame_2/duration = 0.25
+frame_3/texture = ExtResource("4_178i2")
+frame_3/duration = 0.25
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = SubResource("AnimatedTexture_q3es3")
+uv1_world_triplanar = true

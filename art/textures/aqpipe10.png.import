@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ixq63r0pb2dg"
-path.s3tc="res://.godot/imported/aqpipe10.png-75b6832ac3e0910b2e8c28a992f8f7bb.s3tc.ctex"
+path="res://.godot/imported/aqpipe10.png-75b6832ac3e0910b2e8c28a992f8f7bb.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://art/textures/aqpipe10.png"
-dest_files=["res://.godot/imported/aqpipe10.png-75b6832ac3e0910b2e8c28a992f8f7bb.s3tc.ctex"]
+dest_files=["res://.godot/imported/aqpipe10.png-75b6832ac3e0910b2e8c28a992f8f7bb.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsi4iue2lgv4l"
-path.s3tc="res://.godot/imported/aqf009.png-367455ff970e925d7dfbd93e1c2f21aa.s3tc.ctex"
+path="res://.godot/imported/aqf009.png-367455ff970e925d7dfbd93e1c2f21aa.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://art/textures/aqf009.png"
-dest_files=["res://.godot/imported/aqf009.png-367455ff970e925d7dfbd93e1c2f21aa.s3tc.ctex"]
+dest_files=["res://.godot/imported/aqf009.png-367455ff970e925d7dfbd93e1c2f21aa.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
