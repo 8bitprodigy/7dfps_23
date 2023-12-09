@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://d1ah7ps5y5s2q"]
+
+[ext_resource type="Texture2D" uid="uid://c2anj4rhcg5is" path="res://art/textures/slime14.png" id="1_t8q8e"]
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_t8q8e")
+metallic_specular = 0.0
+roughness = 0.0
+uv1_world_triplanar = true

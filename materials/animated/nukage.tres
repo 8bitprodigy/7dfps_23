@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://bc7mslve1pbua"]
+
+[ext_resource type="Texture2D" uid="uid://dmgnq2j6i8yfs" path="res://art/textures/animated/nukage1.png" id="1_qwdfq"]
+[ext_resource type="Texture2D" uid="uid://cmyp1ntluqna7" path="res://art/textures/animated/nukage2.png" id="2_4yu13"]
+[ext_resource type="Texture2D" uid="uid://ibmpktaewshv" path="res://art/textures/animated/nukage3.png" id="3_v8yom"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_q3es3"]
+frames = 3
+frame_0/texture = ExtResource("1_qwdfq")
+frame_0/duration = 0.25
+frame_1/texture = ExtResource("2_4yu13")
+frame_1/duration = 0.25
+frame_2/texture = ExtResource("3_v8yom")
+frame_2/duration = 0.25
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = SubResource("AnimatedTexture_q3es3")
+uv1_world_triplanar = true

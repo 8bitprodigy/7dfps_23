@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://cqw46ftrjjje8"]
+
+[ext_resource type="Script" path="res://entities/pickups/health_pickup.gd" id="1_dr74t"]
+[ext_resource type="Texture2D" uid="uid://bmmy604gxlng4" path="res://art/sprites/bon1a0.png" id="2_gc5d1"]
+[ext_resource type="Texture2D" uid="uid://cd5rm8o4ixhvt" path="res://art/sprites/bon1b0.png" id="3_s13o5"]
+[ext_resource type="Texture2D" uid="uid://ckwlye5xjlu5j" path="res://art/sprites/bon1c0.png" id="4_t4du0"]
+[ext_resource type="Texture2D" uid="uid://8q7qo3q1clr" path="res://art/sprites/bon1d0.png" id="5_7ey58"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_628n4"]
+radius = 0.125
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i04ro"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gc5d1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_s13o5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_t4du0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7ey58")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="health_pickup" type="Area3D"]
+script = ExtResource("1_dr74t")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_628n4")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+pixel_size = 0.02
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_i04ro")
+frame_progress = 0.773973
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

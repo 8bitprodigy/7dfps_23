@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b50oxu1gwa75c"]
+
+[ext_resource type="Texture2D" uid="uid://bgl68kiv85g20" path="res://art/textures/tlite6_4.png" id="1_rjlia"]
+
+[resource]
+shading_mode = 0
+specular_mode = 2
+albedo_texture = ExtResource("1_rjlia")
+uv1_world_triplanar = true

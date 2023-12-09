@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://4py1rvybut03"]
+
+[ext_resource type="Script" path="res://addons/deformable_block_3D/SegmentVertex3D.gd" id="1_mb1im"]
+
+[node name="SegmentVertex3D" type="Marker3D"]
+script = ExtResource("1_mb1im")

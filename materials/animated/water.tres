@@ -1,0 +1,23 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://ukvpjl147i3k"]
+
+[ext_resource type="Texture2D" uid="uid://b7ffbjkph5vnr" path="res://art/textures/animated/fwater1.png" id="1_ngtw1"]
+[ext_resource type="Texture2D" uid="uid://dixfankosayab" path="res://art/textures/animated/fwater2.png" id="2_ya31y"]
+[ext_resource type="Texture2D" uid="uid://brgol7k4m5q2b" path="res://art/textures/animated/fwater3.png" id="3_wm8vt"]
+[ext_resource type="Texture2D" uid="uid://bxekj2n0mdnoh" path="res://art/textures/animated/fwater4.png" id="4_b0bkc"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_q3es3"]
+frames = 4
+frame_0/texture = ExtResource("1_ngtw1")
+frame_0/duration = 0.25
+frame_1/texture = ExtResource("2_ya31y")
+frame_1/duration = 0.25
+frame_2/texture = ExtResource("3_wm8vt")
+frame_2/duration = 0.25
+frame_3/texture = ExtResource("4_b0bkc")
+frame_3/duration = 0.25
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = SubResource("AnimatedTexture_q3es3")
+uv1_world_triplanar = true

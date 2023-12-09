@@ -14,10 +14,3 @@ func angle_to_vec2(angle : float):
 var impact_materials : Dictionary
 #var default_impact_material : ImpactMaterialData
 
-'''func setup_impact_materials(impact_materials_array:Array[ImpactMaterialData]):
-	impact_materials.clear()
-	default_impact_material = impact_materials_array[0]
-	for im in impact_materials_array:
-		impact_materials.merge({im.impact_material_name : im})
-	pass'''
-

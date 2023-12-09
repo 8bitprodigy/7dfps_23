@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c36ceew5atm2y"]
+
+[ext_resource type="Texture2D" uid="uid://bms7i04mnutds" path="res://art/textures/pbrick18.png" id="1_tyfvi"]
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_tyfvi")
+metallic_specular = 0.0
+roughness = 0.0
+uv1_world_triplanar = true

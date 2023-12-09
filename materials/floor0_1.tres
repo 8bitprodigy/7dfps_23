@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://4p8lo7p55vwj"]
+
+[ext_resource type="Texture2D" uid="uid://3nardfcfin5y" path="res://art/textures/floor0_1.png" id="1_j0s17"]
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_j0s17")
+metallic_specular = 0.0
+roughness = 0.0
+uv1_world_triplanar = true

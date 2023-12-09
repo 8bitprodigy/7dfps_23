@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cq8mk7bgq15e3"]
+
+[ext_resource type="Texture2D" uid="uid://dyon4ybn5e5b" path="res://art/textures/dirbri18.png" id="1_254yu"]
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_254yu")
+metallic_specular = 0.0
+roughness = 0.0
+uv1_world_triplanar = true

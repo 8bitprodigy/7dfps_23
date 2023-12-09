@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://p41j0f6f38w0"]
+
+[ext_resource type="Script" path="res://components/levels/spatial_navigation_server.gd" id="1_ktash"]
+
+[node name="SpatialNavigationServer" type="Node"]
+script = ExtResource("1_ktash")
+connections = Array[Resource("res://components/scripts/connection_data.gd")]([null])

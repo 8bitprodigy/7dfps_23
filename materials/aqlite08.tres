@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://r2150ucjwkc0"]
+
+[ext_resource type="Texture2D" uid="uid://dcvv6fdftcaum" path="res://art/textures/aqlite08.png" id="1_vt6xi"]
+
+[resource]
+shading_mode = 0
+specular_mode = 2
+albedo_texture = ExtResource("1_vt6xi")
+uv1_world_triplanar = true

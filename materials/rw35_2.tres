@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dpq6hwyjl6jw"]
+
+[ext_resource type="Texture2D" uid="uid://dpbt0w6813fr8" path="res://art/textures/rw35_2.png" id="1_iblkw"]
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_iblkw")
+metallic_specular = 0.0
+roughness = 0.0
+uv1_world_triplanar = true

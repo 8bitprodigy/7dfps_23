@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://cyea76hn2uext"]
+
+[ext_resource type="Script" path="res://entities/pickups/armor_pickup.gd" id="1_jarx0"]
+[ext_resource type="Texture2D" uid="uid://c456uowormc36" path="res://art/sprites/bon2a0.png" id="2_5sbrv"]
+[ext_resource type="Texture2D" uid="uid://jo8o8ng57quq" path="res://art/sprites/bon2b0.png" id="3_fqa2p"]
+[ext_resource type="Texture2D" uid="uid://c5oi7qduj0w01" path="res://art/sprites/bon2c0.png" id="4_4jqsx"]
+[ext_resource type="Texture2D" uid="uid://s3yrnvdsyrpf" path="res://art/sprites/bon2d0.png" id="5_of14o"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t3p70"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5sbrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fqa2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4jqsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_of14o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_g763m"]
+radius = 0.2
+
+[node name="armor_pickup" type="Area3D"]
+script = ExtResource("1_jarx0")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+pixel_size = 0.02
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_t3p70")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_g763m")

@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bv8bt0nb7gyls"]
+
+[ext_resource type="Texture2D" uid="uid://bau7v2303far6" path="res://art/textures/dopunk4.png" id="1_yktr8"]
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_yktr8")
+metallic_specular = 0.0
+roughness = 0.0
+uv1_world_triplanar = true

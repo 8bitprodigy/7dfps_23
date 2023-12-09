@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bsm86287hu3dg"]
+
+[ext_resource type="Texture2D" uid="uid://cv2r0sihhvh1s" path="res://art/textures/flat19.png" id="1_w44rt"]
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_w44rt")
+metallic_specular = 0.0
+roughness = 0.0
+uv1_world_triplanar = true

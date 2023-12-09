@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b7vuy4lfw6vml"]
+
+[ext_resource type="Texture2D" uid="uid://chthw68pn87rt" path="res://art/textures/aqmetl06.png" id="1_8o68r"]
+
+[resource]
+shading_mode = 2
+specular_mode = 2
+albedo_texture = ExtResource("1_8o68r")
+metallic_specular = 0.0
+roughness = 0.0
+uv1_world_triplanar = true
