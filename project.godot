@@ -94,6 +94,12 @@ secondary_fire={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="world"
+3d_physics/layer_2="characters"
+3d_physics/layer_3="physics_bodies"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

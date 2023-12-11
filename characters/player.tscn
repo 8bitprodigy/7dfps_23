@@ -1,11 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://csv2lfbfs1171"]
+[gd_scene load_steps=12 format=3 uid="uid://csv2lfbfs1171"]
 
-[ext_resource type="Script" path="res://characters/6DOF_Controller.gd" id="1_p5oy3"]
+[ext_resource type="Script" path="res://characters/player_controller.gd" id="1_vdimn"]
 [ext_resource type="PackedScene" uid="uid://i444byfpcb5o" path="res://components/health_component/health_component.tscn" id="2_mirph"]
 [ext_resource type="PackedScene" uid="uid://dned7nntadaxx" path="res://components/hitbox_component.tscn" id="3_p8ced"]
 [ext_resource type="PackedScene" uid="uid://blub1slabs8rk" path="res://components/input_synchronizer.tscn" id="4_37g7b"]
 [ext_resource type="PackedScene" uid="uid://b8t7rph6vl3m" path="res://components/projectile_emitter/projectile_emitter.tscn" id="5_rbnk4"]
-[ext_resource type="Script" path="res://components/Weapons/weapon_base.gd" id="6_x1y7m"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_ywv5q"]
 
@@ -44,15 +43,14 @@ cache/0/16/0/scale = 1.0
 cache/0/16/0/kerning_overrides/32/0 = Vector2(0, 0)
 cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[node name="player" type="CharacterBody3D" node_paths=PackedStringArray("CurrentWeapon")]
+[node name="player" type="CharacterBody3D"]
 collision_layer = 2
-script = ExtResource("1_p5oy3")
-CurrentWeapon = NodePath("weapon_base")
+collision_mask = 3
+script = ExtResource("1_vdimn")
 
-[node name="health_component" parent="." instance=ExtResource("2_mirph")]
+[node name="HealthComponent" parent="." instance=ExtResource("2_mirph")]
 
-[node name="hitbox_component" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("3_p8ced")]
-health_component = NodePath("../health_component")
+[node name="hitbox_component" parent="." instance=ExtResource("3_p8ced")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hitbox_component"]
 shape = SubResource("SphereShape3D_ywv5q")
@@ -94,8 +92,3 @@ text = "test
 "
 font = SubResource("FontFile_5nu00")
 uppercase = true
-
-[node name="weapon_base" type="Node3D" parent="."]
-transform = Transform3D(-0.902352, 0, 0.430999, 0, 1, 0, -0.430999, 0, -0.902352, 0, 0, 0)
-script = ExtResource("6_x1y7m")
-shots_per_second = 1.0

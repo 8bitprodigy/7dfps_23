@@ -9,30 +9,20 @@ class_name SixDOFController
 
 var angular_velocity : Vector3 = Vector3.ZERO
 
-# Set by the authority, synchronized on spawn.
-@export var player : int = 1 :
-	set(id):
-		player = id
-		# Give authority over the player input to the appropriate peer.
-		$input_synchronizer.set_multiplayer_authority(id)
+
 
 # Player synchronized input.
-@onready var input = $input_synchronizer
+@onready var input : Node = $input_synchronizer
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
-func _ready():
-	if player == multiplayer.get_unique_id():
-		$Camera3D.current = true
-		$MeshInstance3D.hide()
-	
 
 func _enter_tree():
 	if Engine.is_editor_hint(): return
 	#prints("Player: ", player)
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	$Label3D.text = str(player)
+	#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	#$Label3D.text = str(player)
 
 func start_fire():
 	CurrentWeapon._start_fire()
@@ -42,7 +32,7 @@ func stop_fire():
 	CurrentWeapon._stop_fire()
 
 func _physics_process(delta):
-	
+	if !input: return
 	angular_velocity.x = lerp(angular_velocity.x,input.rotation_vector.x/200,delta*ACCELERATION)
 	angular_velocity.y = lerp(angular_velocity.y,input.rotation_vector.y/200,delta*ACCELERATION)
 	angular_velocity.z = lerp(angular_velocity.z,input.rotation_vector.z/50,delta*ACCELERATION)

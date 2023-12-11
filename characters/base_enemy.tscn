@@ -1,0 +1,47 @@
+[gd_scene load_steps=11 format=3 uid="uid://dv7li2nxvy4yp"]
+
+[ext_resource type="Script" path="res://characters/6DOF_Controller.gd" id="1_55oyu"]
+[ext_resource type="Script" path="res://components/scripts/hitbox_component.gd" id="2_mfl66"]
+[ext_resource type="Script" path="res://components/health_component/health_component.gd" id="2_q8bns"]
+[ext_resource type="Material" uid="uid://dwh4r2seye533" path="res://materials/aqlite14.tres" id="4_q7apc"]
+[ext_resource type="Material" uid="uid://cyskwlneytccu" path="res://materials/aqlite12.tres" id="5_gqnek"]
+[ext_resource type="PackedScene" uid="uid://6t8vl13m1vt7" path="res://components/health_bar.tscn" id="6_0balo"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_cp08f"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_hqmsv"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_utkso"]
+material = ExtResource("4_q7apc")
+radial_segments = 12
+rings = 5
+
+[sub_resource type="PrismMesh" id="PrismMesh_0v2g3"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="BaseEnemy" type="CharacterBody3D"]
+script = ExtResource("1_55oyu")
+
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("2_q8bns")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_cp08f")
+
+[node name="HitboxComponent" type="Area3D" parent="."]
+script = ExtResource("2_mfl66")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HitboxComponent"]
+shape = SubResource("SphereShape3D_hqmsv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_utkso")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.4)
+material_override = ExtResource("5_gqnek")
+mesh = SubResource("PrismMesh_0v2g3")
+
+[node name="HealthBar" parent="." instance=ExtResource("6_0balo")]
+double_sided = false
+no_depth_test = true

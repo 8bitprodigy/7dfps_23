@@ -1,24 +1,20 @@
-[gd_scene load_steps=11 format=3 uid="uid://bpjsgdditf1xx"]
+[gd_scene load_steps=10 format=3 uid="uid://bpjsgdditf1xx"]
 
 [ext_resource type="Script" path="res://entities/projectile/projectile.gd" id="1_7ctav"]
 [ext_resource type="Script" path="res://entities/projectile/Attack.gd" id="2_500uc"]
+[ext_resource type="ArrayMesh" uid="uid://b6ue724sba55v" path="res://entities/projectile/pulse.res" id="3_yivvn"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_dd5dw"]
 radius = 0.05
 
 [sub_resource type="Resource" id="Resource_yol6u"]
 script = ExtResource("2_500uc")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3xti5"]
-shading_mode = 0
-albedo_color = Color(1, 0, 0, 1)
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_wwgcn"]
-material = SubResource("StandardMaterial3D_3xti5")
-radius = 0.05
-height = 1.0
-radial_segments = 8
-rings = 1
+attack_damage = 0.0
+knockback_force = 0.0
+attack_position = Vector3(0, 0, 0)
+attack_direction = Vector3(0, 0, 0)
+stun_time = 0.0
+stun_chance = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_phfrt"]
 shading_mode = 0
@@ -51,8 +47,7 @@ attack = SubResource("Resource_yol6u")
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
-mesh = SubResource("CapsuleMesh_wwgcn")
+mesh = ExtResource("3_yivvn")
 
 [node name="start_pos" type="MeshInstance3D" parent="."]
 visible = false

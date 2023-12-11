@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://6t8vl13m1vt7"]
+
+[ext_resource type="Script" path="res://components/health_bar.gd" id="1_5qx3w"]
+[ext_resource type="FontFile" uid="uid://dgtb4g251c2yy" path="res://fonts/SourceCodePro-Black.otf" id="1_6oxtr"]
+
+[node name="HealthBar" type="Label3D"]
+billboard = 1
+text = "[##########]"
+font = ExtResource("1_6oxtr")
+script = ExtResource("1_5qx3w")
+show_percent = true
