@@ -5,6 +5,8 @@ class_name SixDOFController
 @export var THROTTLE_MULTIPLIER : float = 2.0
 @export var ACCELERATION : float = 5.0
 
+@export var CurrentWeapon : weapon_base
+
 var angular_velocity : Vector3 = Vector3.ZERO
 
 # Set by the authority, synchronized on spawn.
@@ -31,6 +33,13 @@ func _enter_tree():
 	#prints("Player: ", player)
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	$Label3D.text = str(player)
+
+func start_fire():
+	CurrentWeapon._start_fire()
+	pass
+	
+func stop_fire():
+	CurrentWeapon._stop_fire()
 
 func _physics_process(delta):
 	
