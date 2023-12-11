@@ -7,10 +7,14 @@ class_name PlayerController
 	set(id):
 		player = id
 		# Give authority over the player input to the appropriate peer.
-		$input_synchronizer.set_multiplayer_authority(id)
+		if !input_node:
+			prints("Set up Input Node first!")
+			return
+		input_node.set_multiplayer_authority(id)
 
 
 func _ready():
+	add_to_group("players")
 	if player != multiplayer.get_unique_id(): return
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	if has_node("Camera3D"):

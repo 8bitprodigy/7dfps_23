@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://4hjb1fstbcu0"]
+
+[ext_resource type="Script" path="res://characters/input_enemy_ai.gd" id="1_rkbbp"]
+
+[node name="InputEnemyAI" type="MultiplayerSynchronizer"]
+script = ExtResource("1_rkbbp")

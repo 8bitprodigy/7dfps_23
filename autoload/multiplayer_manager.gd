@@ -13,6 +13,7 @@ const PORT : int = 9999 #27015
 var enet_peer : ENetMultiplayerPeer = ENetMultiplayerPeer.new()
 var spawn_path : NodePath = ""
 var multiplayer_spawner : MultiplayerSpawner
+var player_list : Array[PlayerController]
 
 func _ready():
 	# We only need to spawn players on the server.
@@ -92,11 +93,13 @@ func add_player(peer_id:int):
 	get_node(spawn_path).add_child(player)
 	player.global_position = Vector3.ZERO
 	player.velocity = Vector3.ZERO
+	player_list.append(player)
 
 func remove_player(peer_id:int):
 	prints("Peer Disconnected: ", peer_id)
 	var player = get_node(spawn_path).get_node_or_null(str(peer_id))
 	prints("Player: ", player)
+	player_list.pop_at(player_list.find(player))
 	if player:
 		prints("Freeing Player.")
 		player.queue_free()

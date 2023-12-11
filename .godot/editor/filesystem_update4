@@ -52,3 +52,11 @@ res://entities/debris.tscn
 res://characters/6DOF_Controller.gd
 res://components/Camera3D.gd
 res://characters/player_controller.gd
+res://autoload/multiplayer_manager.gd
+res://components/input_enemy_ai.tscn
+res://components/scripts/input_synchronizer.gd
+res://components/input_enemy_ai.gd
+res://components/baseInputController.gd
+res://characters/input_enemy_ai.gd
+res://characters/input_synchronizer.gd
+res://characters/baseInputController.gd

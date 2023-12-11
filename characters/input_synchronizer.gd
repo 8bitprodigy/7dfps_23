@@ -1,20 +1,12 @@
-extends MultiplayerSynchronizer
-class_name InputSynchronizer
-
-
-@export var movement_vector : Vector3 = Vector3.ZERO
-@export var rotation_vector : Vector3 = Vector3.ZERO
-@export var rotation_basis : Basis = Basis.IDENTITY
-
-@export var is_primary_firing : bool = false
-@export var is_secondary_firing : bool = false
-var parent : Node
+extends BaseInputController
+class_name PlayerInputSynchronizer
 
 
 func _ready():
 	parent = get_parent()
 	set_process(get_multiplayer_authority() == multiplayer.get_unique_id())
 	set_process_input(get_multiplayer_authority() == multiplayer.get_unique_id())
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _enter_tree():
 	if !Engine.is_editor_hint(): return

@@ -12,11 +12,15 @@ var angular_velocity : Vector3 = Vector3.ZERO
 
 
 # Player synchronized input.
-@onready var input : Node = $input_synchronizer
+@export var input_node : Node
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
+func _ready():
+	if input_node: return
+	set_physics_process(false)
+	set_process(false)
 
 func _enter_tree():
 	if Engine.is_editor_hint(): return
@@ -32,17 +36,21 @@ func stop_fire():
 	CurrentWeapon._stop_fire()
 
 func _physics_process(delta):
-	if !input: return
-	angular_velocity.x = lerp(angular_velocity.x,input.rotation_vector.x/200,delta*ACCELERATION)
-	angular_velocity.y = lerp(angular_velocity.y,input.rotation_vector.y/200,delta*ACCELERATION)
-	angular_velocity.z = lerp(angular_velocity.z,input.rotation_vector.z/50,delta*ACCELERATION)
+	if !input_node: return
+	angular_velocity.x = lerp(angular_velocity.x,input_node.rotation_vector.x/200,delta*ACCELERATION)
+	angular_velocity.y = lerp(angular_velocity.y,input_node.rotation_vector.y/200,delta*ACCELERATION)
+	angular_velocity.z = lerp(angular_velocity.z,input_node.rotation_vector.z/50,delta*ACCELERATION)
 	
 	rotate(basis.x.normalized(), angular_velocity.x)
 	rotate(basis.y.normalized(), angular_velocity.y)
 	rotate(basis.z.normalized(), angular_velocity.z)
 	
 	var speed : float = clampf(Input.get_action_strength("throttle") * THROTTLE_MULTIPLIER , 1.0, THROTTLE_MULTIPLIER) * SPEED
-	var direction : Vector3 = ((basis.x * input.movement_vector.x) + (basis.y * input.movement_vector.y) + (basis.z * input.movement_vector.z)).normalized() * delta * speed
+	var direction : Vector3 = (
+		(basis.x * input_node.movement_vector.x) +
+		(basis.y * input_node.movement_vector.y) + 
+		(basis.z * input_node.movement_vector.z)
+		).normalized() * delta * speed
 	
 	velocity = lerp(velocity,direction,delta*ACCELERATION)
 	move_and_slide()

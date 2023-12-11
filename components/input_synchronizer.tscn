@@ -1,6 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://blub1slabs8rk"]
 
-[ext_resource type="Script" path="res://components/scripts/input_synchronizer.gd" id="1_bddhp"]
+[ext_resource type="Script" path="res://characters/input_synchronizer.gd" id="1_1e6pb"]
 
 [node name="input_synchronizer" type="MultiplayerSynchronizer"]
-script = ExtResource("1_bddhp")
+script = ExtResource("1_1e6pb")
+movement_vector = null
+rotation_vector = null
+rotation_basis = null
+is_primary_firing = null
+is_secondary_firing = null
