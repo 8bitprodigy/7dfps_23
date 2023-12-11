@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://8qyexhtpelpj"]
+
+[ext_resource type="Texture2D" uid="uid://x2gpbjaeprp4" path="res://addons/deformable_block_3D/icons/connection_3D.svg" id="1_bqpwf"]
+[ext_resource type="Script" path="res://addons/deformable_block_3D/connection_visualizer_3d.gd" id="1_wnhf4"]
+
+[node name="ConnectionVisualizer3D" type="MeshInstance3D" groups=["connection_visualizer"]]
+script = ExtResource("1_wnhf4")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 1
+no_depth_test = true
+fixed_size = true
+texture = ExtResource("1_bqpwf")

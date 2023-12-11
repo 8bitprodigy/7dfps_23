@@ -29,6 +29,7 @@ func _ready():
 func _enter_tree():
 	if Engine.is_editor_hint(): return
 	#prints("Player: ", player)
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	$Label3D.text = str(player)
 
 func _physics_process(delta):

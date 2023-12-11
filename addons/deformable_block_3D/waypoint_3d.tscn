@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://c7mjiglscaxu5"]
+[gd_scene load_steps=3 format=3 uid="uid://c7mjiglscaxu5"]
 
 [ext_resource type="Script" path="res://addons/deformable_block_3D/Waypoint3D.gd" id="1_va4rr"]
+[ext_resource type="Texture2D" uid="uid://bab5vi5c8ct4v" path="res://addons/deformable_block_3D/icons/waypoint_3D.svg" id="2_k7uxh"]
 
 [node name="Waypoint3D" type="Marker3D"]
 script = ExtResource("1_va4rr")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 1
+no_depth_test = true
+fixed_size = true
+texture = ExtResource("2_k7uxh")

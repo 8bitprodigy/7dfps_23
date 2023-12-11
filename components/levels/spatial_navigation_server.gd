@@ -13,11 +13,9 @@ var old_connections     : Array[WaypointConnectionData]
 		if connections.size() > old_connections.size():
 			#stuff here
 			var difference = get_array_difference(old_connections,connections)
-			return
 		elif connections.size() < old_connections.size():
 			#stuff here
 			var difference = get_array_difference(old_connections,connections)
-			return
 		old_connections = connections
 		
 

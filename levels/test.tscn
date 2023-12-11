@@ -1,8 +1,17 @@
-[gd_scene load_steps=32 format=3 uid="uid://c37ujdrghqjf7"]
+[gd_scene load_steps=41 format=3 uid="uid://c37ujdrghqjf7"]
 
 [ext_resource type="Resource" uid="uid://2nsdaww3p87k" path="res://skybox/clouds_skybox.tres" id="2_c312b"]
 [ext_resource type="PackedScene" uid="uid://bj1s66x1utt6n" path="res://skybox/skybox.tscn" id="2_i4ili"]
 [ext_resource type="Texture2D" uid="uid://c14ba2n8qqw33" path="res://icon.svg" id="4_0n2ew"]
+[ext_resource type="Material" uid="uid://c62g735euilc2" path="res://materials/aqconc12.tres" id="4_rswul"]
+[ext_resource type="Material" uid="uid://bcx5qjx53uyw8" path="res://materials/animated/FIREBLU.tres" id="5_f3cpg"]
+[ext_resource type="Material" uid="uid://boaybx2y4urut" path="res://materials/animated/lavarock.tres" id="6_hkotg"]
+[ext_resource type="Material" uid="uid://bc7mslve1pbua" path="res://materials/animated/nukage.tres" id="7_wt132"]
+[ext_resource type="Material" uid="uid://ca4omtbcpqxkm" path="res://materials/animated/lava.tres" id="8_jvg6j"]
+[ext_resource type="Material" uid="uid://ukvpjl147i3k" path="res://materials/animated/water.tres" id="9_gx0ca"]
+[ext_resource type="Material" uid="uid://btjnfp32gcbef" path="res://materials/animated/slime1.tres" id="10_bvbi4"]
+[ext_resource type="Material" uid="uid://domwwepm3y1sy" path="res://materials/aqconc03.tres" id="11_8r3xr"]
+[ext_resource type="Material" uid="uid://dcsoufusss8gf" path="res://materials/aqlite01.tres" id="12_sqm2s"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_b40hk"]
 sky_top_color = Color(0, 0.454902, 0.745098, 1)
@@ -213,6 +222,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -16)
 operation = 2
 use_collision = true
 size = Vector3(18, 15, 17)
+material = ExtResource("4_rswul")
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="CSGCombiner3D"]
 operation = 2
@@ -220,38 +230,47 @@ operation = 2
 [node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
 mesh = SubResource("SphereMesh_eemjh")
+material = ExtResource("5_f3cpg")
 
 [node name="CSGMesh3D2" type="CSGMesh3D" parent="CSGCombiner3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 1)
 mesh = SubResource("SphereMesh_eemjh")
+material = ExtResource("6_hkotg")
 
 [node name="CSGMesh3D3" type="CSGMesh3D" parent="CSGCombiner3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 2)
 mesh = SubResource("SphereMesh_eemjh")
+material = ExtResource("7_wt132")
 
 [node name="CSGMesh3D4" type="CSGMesh3D" parent="CSGCombiner3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 3)
 mesh = SubResource("SphereMesh_eemjh")
+material = ExtResource("8_jvg6j")
 
 [node name="CSGMesh3D5" type="CSGMesh3D" parent="CSGCombiner3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 4)
 mesh = SubResource("SphereMesh_eemjh")
+material = ExtResource("9_gx0ca")
 
 [node name="CSGMesh3D6" type="CSGMesh3D" parent="CSGCombiner3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 5)
 mesh = SubResource("SphereMesh_eemjh")
+material = ExtResource("10_bvbi4")
 
 [node name="CSGMesh3D7" type="CSGMesh3D" parent="CSGCombiner3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 6)
 mesh = SubResource("SphereMesh_eemjh")
+material = ExtResource("10_bvbi4")
 
 [node name="CSGMesh3D8" type="CSGMesh3D" parent="CSGCombiner3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 7)
 mesh = SubResource("SphereMesh_eemjh")
+material = ExtResource("11_8r3xr")
 
 [node name="CSGMesh3D9" type="CSGMesh3D" parent="CSGCombiner3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 8)
 mesh = SubResource("SphereMesh_eemjh")
+material = ExtResource("12_sqm2s")
 
 [node name="CSGMesh3D10" type="CSGMesh3D" parent="CSGCombiner3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 9)

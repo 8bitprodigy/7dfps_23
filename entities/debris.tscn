@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://c04dys1wl2vxj"]
+
+[ext_resource type="Script" path="res://entities/debris.gd" id="1_c3bfg"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_00i7x"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8rkro"]
+size = Vector3(0.65, 0.65, 0.65)
+
+[node name="Debris" type="RigidBody3D"]
+contact_monitor = true
+script = ExtResource("1_c3bfg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_00i7x")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_8rkro")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

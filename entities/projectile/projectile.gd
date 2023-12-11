@@ -24,3 +24,9 @@ func _process(delta) -> void:
 	global_position = global_position + (target_position.length()*-global_transform.basis.z.normalized())
 	target_position =(Vector3.FORWARD*speed) * delta
 	force_shapecast_update()
+	var collision_count : int = get_collision_count()
+	if collision_count > 0:
+		for i:int in range(0,collision_count-1):
+			if get_collider(i).has_node("health_component"):
+				get_collider(i).get_node("health_component").damage(attack)
+		queue_free()

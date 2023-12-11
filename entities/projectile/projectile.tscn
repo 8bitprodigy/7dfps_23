@@ -55,7 +55,9 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 
 mesh = SubResource("CapsuleMesh_wwgcn")
 
 [node name="start_pos" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("SphereMesh_c45w7")
 
 [node name="end_pos" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("SphereMesh_186r0")
