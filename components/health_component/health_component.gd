@@ -15,6 +15,7 @@ func damage(attack:AttackInfo):
 	health -= attack.attack_damage
 	emit_signal("damaged")
 	emit_signal("changed")
+	prints(get_parent(), " took damage!")
 	if health > 0: return
 	emit_signal("died")
 	get_parent().queue_free()
@@ -23,6 +24,7 @@ func heal(healing:float):
 	health += healing
 	emit_signal("healed")
 	emit_signal("changed")
+	prints(get_parent(), " received health!")
 	if health <= MAX_HEALTH: return
 	emit_signal("healed_max")
 	health = MAX_HEALTH

@@ -60,3 +60,6 @@ res://components/baseInputController.gd
 res://characters/input_enemy_ai.gd
 res://characters/input_synchronizer.gd
 res://characters/baseInputController.gd
+res://characters/input_enemy_ai.tscn
+res://components/hitbox_component.tscn
+res://entities/projectile/projectile.gd

@@ -24,14 +24,15 @@ script = ExtResource("1_55oyu")
 
 [node name="HealthComponent" type="Node" parent="."]
 script = ExtResource("2_q8bns")
+MAX_HEALTH = 10.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_cp08f")
 
-[node name="HitboxComponent" type="Area3D" parent="."]
+[node name="hitbox_component" type="Area3D" parent="."]
 script = ExtResource("2_mfl66")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="HitboxComponent"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hitbox_component"]
 shape = SubResource("SphereShape3D_hqmsv")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]

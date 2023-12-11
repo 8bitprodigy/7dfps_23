@@ -9,7 +9,7 @@ radius = 0.05
 
 [sub_resource type="Resource" id="Resource_yol6u"]
 script = ExtResource("2_500uc")
-attack_damage = 0.0
+attack_damage = 1.0
 knockback_force = 0.0
 attack_position = Vector3(0, 0, 0)
 attack_direction = Vector3(0, 0, 0)

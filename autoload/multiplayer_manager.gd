@@ -112,7 +112,7 @@ func register_gun(peer_id:int,gun:ProjectileEmitter):
 
 @rpc
 func add_projectile(peer_id:int, gun:ProjectileEmitter):
-	prints("Add Projectile called!")
+	#prints("Add Projectile called!")
 	var new_projectile = _projectile.instantiate()
 	get_tree().root.add_child(new_projectile)
 	new_projectile.add_exception(gun.parent)

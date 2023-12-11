@@ -13,7 +13,7 @@ func _ready():
 	var hlth_cmpnt : Node = parent.get_node("HealthComponent")
 	if !(hlth_cmpnt is HealthComponent): return
 	health_component = hlth_cmpnt
-	health_component.changed.connect(update_health.bind(health_component))
+	health_component.changed.connect(update_health.bind())
 	update_health()
 
 

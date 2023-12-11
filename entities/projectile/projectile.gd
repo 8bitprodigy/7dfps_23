@@ -26,7 +26,11 @@ func _process(delta) -> void:
 	force_shapecast_update()
 	var collision_count : int = get_collision_count()
 	if collision_count > 0:
-		for i:int in range(0,collision_count-1):
-			if get_collider(i).has_node("health_component"):
-				get_collider(i).get_node("health_component").damage(attack)
+		prints("Projectile hit!")
+		for i:int in range(0,collision_count):
+			prints("Projectile collider ", i, ": ", get_collider(i))
+			if get_collider(i).has_node("hitbox_component"):
+				if get_collider(i).get_node("hitbox_component") is HitboxComponent:
+					prints("Projectile damaging ", get_collider(i))
+					get_collider(i).get_node("hitbox_component").damage(attack)
 		queue_free()

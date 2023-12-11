@@ -36,14 +36,13 @@ func _process(_delta):
 		Input.get_action_strength("backward")-Input.get_action_strength("forward")
 	)
 	
-	var was_primary_firing = is_primary_firing
-	is_primary_firing = Input.is_action_pressed("primary_fire")
-	if is_primary_firing && !was_primary_firing: 
-		parent.start_fire()
-	elif was_primary_firing && !is_primary_firing:
-		parent.stop_fire()
-		#parent.get_node("projectile_emitter").fire()
-	is_secondary_firing = Input.is_action_pressed("secondary_fire")
+	#if Input.is_action_just_pressed("primary_fire"): 
+	#	parent.start_fire()
+	#elif Input.is_action_just_released("primary_fire"):
+	#	parent.stop_fire()
+	if Input.is_action_pressed("primary_fire"):
+		parent.get_node("projectile_emitter").fire()
+	#is_secondary_firing = Input.is_action_pressed("secondary_fire")
 	
 	rotation_vector.x = 0.0
 	rotation_vector.y = 0.0

@@ -4,8 +4,3 @@
 
 [node name="input_synchronizer" type="MultiplayerSynchronizer"]
 script = ExtResource("1_1e6pb")
-movement_vector = null
-rotation_vector = null
-rotation_basis = null
-is_primary_firing = null
-is_secondary_firing = null
