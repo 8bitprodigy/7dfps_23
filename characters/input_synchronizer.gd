@@ -1,7 +1,6 @@
 extends BaseInputController
 class_name PlayerInputSynchronizer
 
-var parent : Node
 
 func _ready():
 	parent = get_parent()

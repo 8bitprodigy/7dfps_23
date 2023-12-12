@@ -11,13 +11,6 @@ var angular_velocity : Vector3 = Vector3.ZERO
 
 @onready var weapon_controller = $weapon_controller
 
-# Set by the authority, synchronized on spawn.
-@export var player : int = 1 :
-	set(id):
-		player = id
-		# Give authority over the player input to the appropriate peer.
-		$input_synchronizer.set_multiplayer_authority(id)
-
 # Player synchronized input.
 @export var input_node : Node
 

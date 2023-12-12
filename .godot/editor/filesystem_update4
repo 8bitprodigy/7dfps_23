@@ -28,3 +28,15 @@ res://materials/step1.tres
 res://materials/animated/watrfall.tres
 res://entities/projectile/missile.res
 res://entities/projectile/missile_flame.res
+res://main.tscn
+res://addons/deformable_block_3D/waypoint_3d.tscn
+res://components/input_synchronizer.tscn
+res://components/gun.tscn
+res://levels/cyclopsTest.tscn
+res://entities/projectile/projectile.tscn
+res://levels/test.tscn
+res://entities/debris.tscn
+res://characters/player.tscn
+res://characters/base_enemy.tscn
+res://characters/6DOF_Controller.gd
+res://characters/input_synchronizer.gd
