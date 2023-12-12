@@ -6,10 +6,10 @@ class_name InputSynchronizer
 @export var rotation_vector : Vector3 = Vector3.ZERO
 @export var rotation_basis : Basis = Basis.IDENTITY
 
-@export var is_primary_firing : bool = false
-@export var is_secondary_firing : bool = false
-var parent : Node
+var is_primary_firing : bool
+var was_primary_firing : bool
 
+var parent : Node
 
 func _ready():
 	parent = get_parent()
@@ -40,14 +40,10 @@ func _process(_delta):
 		Input.get_action_strength("backward")-Input.get_action_strength("forward")
 	)
 	
-	var was_primary_firing = is_primary_firing
-	is_primary_firing = Input.is_action_pressed("primary_fire")
-	if is_primary_firing && !was_primary_firing: 
-		parent.start_fire()
-	elif was_primary_firing && !is_primary_firing:
-		parent.stop_fire()
-		#parent.get_node("projectile_emitter").fire()
-	is_secondary_firing = Input.is_action_pressed("secondary_fire")
+	var weapon_controller = parent.weapon_controller
+	if weapon_controller != null:
+		weapon_controller.is_primary_firing = Input.is_action_pressed("primary_fire")
+		weapon_controller.is_secondary_firing = Input.is_action_pressed("secondary_fire")
 	
 	rotation_vector.x = 0.0
 	rotation_vector.y = 0.0

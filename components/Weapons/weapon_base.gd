@@ -19,20 +19,19 @@ var is_firing : bool = false
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if shot_timer < refactory_time: shot_timer += delta
-	elif is_firing: _handle_fire()
-	
+	elif is_firing: _handle_primary_fire()	
 	pass
 
-func _start_fire():
+func start_primary_fire():
 	is_firing = true
-	_handle_fire()
+	_handle_primary_fire()
 	pass
 
-func _stop_fire():
+func stop_primary_fire():
 	is_firing = false
 	pass
 
-func _handle_fire():
+func _handle_primary_fire():
 	shot_timer = 0
 	
 	if projectile_type != null:
@@ -43,6 +42,29 @@ func _handle_fire():
 		for hit in hit_dict:
 			prints("hit " + hit)
 	pass
+
+
+func start_secondary_fire():
+	is_firing = true
+	_handle_secondary_fire()
+	pass
+
+func stop_secondary_fire():
+	is_firing = false
+	pass
+
+func _handle_secondary_fire():
+	shot_timer = 0
+	
+	if projectile_type != null:
+		prints("Should fire projectile")
+		#instantiate and fire projectile
+	else:
+		var hit_dict = fire_hitscan(transform.basis.z)
+		for hit in hit_dict:
+			prints("hit " + hit)
+	pass
+
 
 func fire_hitscan(direction: Vector3 = Vector3(0,0,0)) -> Dictionary:
 	var space = get_world_3d().direct_space_state

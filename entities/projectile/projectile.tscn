@@ -8,6 +8,12 @@ radius = 0.05
 
 [sub_resource type="Resource" id="Resource_yol6u"]
 script = ExtResource("2_500uc")
+attack_damage = 0.0
+knockback_force = 0.0
+attack_position = Vector3(0, 0, 0)
+attack_direction = Vector3(0, 0, 0)
+stun_time = 0.0
+stun_chance = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3xti5"]
 shading_mode = 0
