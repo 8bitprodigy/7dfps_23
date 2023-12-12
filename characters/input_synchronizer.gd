@@ -1,6 +1,7 @@
 extends BaseInputController
 class_name PlayerInputSynchronizer
 
+var parent : Node
 
 func _ready():
 	parent = get_parent()
@@ -36,13 +37,10 @@ func _process(_delta):
 		Input.get_action_strength("backward")-Input.get_action_strength("forward")
 	)
 	
-	#if Input.is_action_just_pressed("primary_fire"): 
-	#	parent.start_fire()
-	#elif Input.is_action_just_released("primary_fire"):
-	#	parent.stop_fire()
-	if Input.is_action_pressed("primary_fire"):
-		parent.get_node("projectile_emitter").fire()
-	#is_secondary_firing = Input.is_action_pressed("secondary_fire")
+	var weapon_controller = parent.weapon_controller
+	if weapon_controller != null:
+		weapon_controller.is_primary_firing = Input.is_action_pressed("primary_fire")
+		weapon_controller.is_secondary_firing = Input.is_action_pressed("secondary_fire")
 	
 	rotation_vector.x = 0.0
 	rotation_vector.y = 0.0

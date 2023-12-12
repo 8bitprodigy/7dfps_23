@@ -1,12 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://csv2lfbfs1171"]
+[gd_scene load_steps=13 format=3 uid="uid://csv2lfbfs1171"]
 
-[ext_resource type="Script" path="res://characters/player_controller.gd" id="1_vdimn"]
+[ext_resource type="Script" path="res://characters/6DOF_Controller.gd" id="1_p5oy3"]
 [ext_resource type="PackedScene" uid="uid://i444byfpcb5o" path="res://components/health_component/health_component.tscn" id="2_mirph"]
 [ext_resource type="PackedScene" uid="uid://dned7nntadaxx" path="res://components/hitbox_component.tscn" id="3_p8ced"]
 [ext_resource type="PackedScene" uid="uid://blub1slabs8rk" path="res://components/input_synchronizer.tscn" id="4_37g7b"]
 [ext_resource type="PackedScene" uid="uid://b8t7rph6vl3m" path="res://components/projectile_emitter/projectile_emitter.tscn" id="5_rbnk4"]
 [ext_resource type="Script" path="res://components/Weapons/weapon_base.gd" id="6_x1y7m"]
-[ext_resource type="PackedScene" uid="uid://cdrlwgcvh3h5m" path="res://components/scripts/weapon_controller.tscn" id="7_52wkk"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_ywv5q"]
 
@@ -45,15 +44,14 @@ cache/0/16/0/scale = 1.0
 cache/0/16/0/kerning_overrides/32/0 = Vector2(0, 0)
 cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[node name="player" type="CharacterBody3D" node_paths=PackedStringArray("input_node")]
+[node name="player" type="CharacterBody3D"]
 collision_layer = 2
-collision_mask = 3
-script = ExtResource("1_vdimn")
-input_node = NodePath("input_synchronizer")
+script = ExtResource("1_p5oy3")
 
-[node name="HealthComponent" parent="." instance=ExtResource("2_mirph")]
+[node name="health_component" parent="." instance=ExtResource("2_mirph")]
 
-[node name="hitbox_component" parent="." instance=ExtResource("3_p8ced")]
+[node name="hitbox_component" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("3_p8ced")]
+health_component = NodePath("../health_component")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hitbox_component"]
 shape = SubResource("SphereShape3D_ywv5q")
@@ -74,6 +72,11 @@ spot_attenuation = 0.0272047
 [node name="input_synchronizer" parent="." instance=ExtResource("4_37g7b")]
 replication_config = SubResource("SceneReplicationConfig_la4et")
 visibility_update_mode = 1
+movement_vector = null
+rotation_vector = null
+rotation_basis = null
+is_primary_firing = null
+is_secondary_firing = null
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("SphereMesh_oe5dx")
@@ -100,6 +103,3 @@ uppercase = true
 transform = Transform3D(-0.902352, 0, 0.430999, 0, 1, 0, -0.430999, 0, -0.902352, 0, 0, 0)
 script = ExtResource("6_x1y7m")
 shots_per_second = 1.0
-
-[node name="weapon_controller" parent="." node_paths=PackedStringArray("CurrentWeapon") instance=ExtResource("7_52wkk")]
-CurrentWeapon = NodePath("../weapon_base")
