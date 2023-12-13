@@ -1,6 +1,6 @@
-extends Node
-
+extends Node3D
 class_name WeaponController
+
 
 @export var CurrentWeapon : weapon_base
 

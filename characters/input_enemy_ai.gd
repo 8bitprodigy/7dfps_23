@@ -39,11 +39,22 @@ func AI_tick():
 	
 	target_transform = parent_transform.affine_inverse() * target_transform
 	
-	var dot_y_plane : float = Vector2(0,-1).dot(Vector2(target_transform.origin.x,target_transform.origin.z))
-	var dot_x_plane : float = Vector2(1, 0).dot(Vector2(target_transform.origin.z,target_transform.origin.y))
+	var dot_y_plane : float = Vector2(0,-1).dot(Vector2(target_transform.origin.z,target_transform.origin.x))
+	var dot_x_plane : float = Vector2(1, 0).dot(Vector2(target_transform.origin.y,target_transform.origin.z))
+	#var dot_z_plane : float = Vector2(1, 0).dot(Vector2(target_transform.origin.z,target_transform.origin.y))
 	
 	rotation_vector.x = dot_x_plane
 	rotation_vector.y = dot_y_plane
+	
+	if move_distance > 0:
+		movement_vector.z = (target_position.normalized().dot(parent.basis.z))
+	else: movement_vector.z = 0
+	
+	var fire_dot : float = parent.basis.z.dot((parent.global_position-target_player.global_position).normalized())
+	prints("Fire Dot Product: ", fire_dot)
+	if fire_dot > 0.85:
+		is_primary_firing = true
+	else: is_primary_firing = false
 	
 	#parent.look_at(target_player.global_position)
 	timer = get_tree().create_timer(AI_tick_rate_in_seconds)

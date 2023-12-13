@@ -1,8 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://bpjsgdditf1xx"]
+[gd_scene load_steps=16 format=3 uid="uid://bpjsgdditf1xx"]
 
 [ext_resource type="Script" path="res://entities/projectile/projectile.gd" id="1_7ctav"]
 [ext_resource type="Script" path="res://entities/projectile/Attack.gd" id="2_500uc"]
 [ext_resource type="ArrayMesh" uid="uid://b6ue724sba55v" path="res://entities/projectile/pulse.res" id="3_yivvn"]
+[ext_resource type="Texture2D" uid="uid://dyw5nfe6oic0h" path="res://art/sprites/apbxa0.png" id="4_34un2"]
+[ext_resource type="Texture2D" uid="uid://cuyev176sifq5" path="res://art/sprites/apbxb0.png" id="5_tf7wv"]
+[ext_resource type="Texture2D" uid="uid://jq6dm8cw23p5" path="res://art/sprites/apbxc0.png" id="6_gjoau"]
+[ext_resource type="Texture2D" uid="uid://icttkrrspuul" path="res://art/sprites/apbxd0.png" id="7_devah"]
+[ext_resource type="Texture2D" uid="uid://cox30uda1o2qy" path="res://art/sprites/apbxe0.png" id="8_rbk71"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_dd5dw"]
 radius = 0.05
@@ -38,6 +43,29 @@ height = 0.2
 radial_segments = 4
 rings = 1
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_qjgi1"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("4_34un2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tf7wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_gjoau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_devah")
+}, {
+"duration": 1.25,
+"texture": ExtResource("8_rbk71")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
 [node name="projectile" type="ShapeCast3D" groups=["cleanup", "projectiles"]]
 shape = SubResource("SphereShape3D_dd5dw")
 target_position = Vector3(0, 0, 0)
@@ -56,3 +84,13 @@ mesh = SubResource("SphereMesh_c45w7")
 [node name="end_pos" type="MeshInstance3D" parent="."]
 visible = false
 mesh = SubResource("SphereMesh_186r0")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.3)
+visible = false
+pixel_size = 0.025
+billboard = 1
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_qjgi1")
+frame = 3
+frame_progress = 0.523225

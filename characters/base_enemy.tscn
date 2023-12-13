@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dv7li2nxvy4yp"]
+[gd_scene load_steps=13 format=3 uid="uid://dv7li2nxvy4yp"]
 
 [ext_resource type="Script" path="res://characters/6DOF_Controller.gd" id="1_55oyu"]
 [ext_resource type="Script" path="res://components/scripts/hitbox_component.gd" id="2_mfl66"]
@@ -7,6 +7,7 @@
 [ext_resource type="Material" uid="uid://cyskwlneytccu" path="res://materials/aqlite12.tres" id="5_gqnek"]
 [ext_resource type="PackedScene" uid="uid://6t8vl13m1vt7" path="res://components/health_bar.tscn" id="6_0balo"]
 [ext_resource type="PackedScene" uid="uid://4hjb1fstbcu0" path="res://characters/input_enemy_ai.tscn" id="7_1c6e6"]
+[ext_resource type="Script" path="res://components/projectile_emitter/projectile_emitter.gd" id="8_vryvl"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_cp08f"]
 
@@ -20,8 +21,9 @@ rings = 5
 [sub_resource type="PrismMesh" id="PrismMesh_0v2g3"]
 size = Vector3(0.5, 0.5, 0.5)
 
-[node name="BaseEnemy" type="CharacterBody3D"]
+[node name="BaseEnemy" type="CharacterBody3D" node_paths=PackedStringArray("input_node")]
 script = ExtResource("1_55oyu")
+input_node = NodePath("InputEnemyAI")
 
 [node name="HealthComponent" type="Node" parent="."]
 script = ExtResource("2_q8bns")
@@ -45,8 +47,12 @@ material_override = ExtResource("5_gqnek")
 mesh = SubResource("PrismMesh_0v2g3")
 
 [node name="HealthBar" parent="." instance=ExtResource("6_0balo")]
+visible = false
 double_sided = false
 no_depth_test = true
 alpha_antialiasing_mode = 2
+
+[node name="ProjectileEmitter" type="Marker3D" parent="."]
+script = ExtResource("8_vryvl")
 
 [node name="InputEnemyAI" parent="." instance=ExtResource("7_1c6e6")]

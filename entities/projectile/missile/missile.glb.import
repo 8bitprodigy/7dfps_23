@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://4jwsv1bbtb2b"
-path="res://.godot/imported/missile.glb-f3933844147f6d2fe198016e3def26a9.scn"
+path="res://.godot/imported/missile.glb-3db01f31e7afeefb08640f2c37b1b038.scn"
 
 [deps]
 
-source_file="res://entities/projectile/missile.glb"
-dest_files=["res://.godot/imported/missile.glb-f3933844147f6d2fe198016e3def26a9.scn"]
+source_file="res://entities/projectile/missile/missile.glb"
+dest_files=["res://.godot/imported/missile.glb-3db01f31e7afeefb08640f2c37b1b038.scn"]
 
 [params]
 
@@ -39,7 +39,7 @@ _subresources={
 "lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
-"save_to_file/path": "res://entities/projectile/missile.res"
+"save_to_file/path": "res://entities/projectile/missile/missile.res"
 },
 "missile_Plane": {
 "generate/lightmap_uv": 0,
@@ -49,7 +49,17 @@ _subresources={
 "lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
-"save_to_file/path": "res://entities/projectile/missile_flame.res"
+"save_to_file/path": "res://entities/projectile/missile/missile_flame.res"
+},
+"missile_Plane_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://entities/projectile/missile/missile_flame_corona.res"
 }
 }
 }

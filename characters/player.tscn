@@ -1,10 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://csv2lfbfs1171"]
+[gd_scene load_steps=14 format=3 uid="uid://csv2lfbfs1171"]
 
 [ext_resource type="Script" path="res://characters/player_controller.gd" id="1_vdimn"]
 [ext_resource type="PackedScene" uid="uid://i444byfpcb5o" path="res://components/health_component/health_component.tscn" id="2_mirph"]
 [ext_resource type="PackedScene" uid="uid://dned7nntadaxx" path="res://components/hitbox_component.tscn" id="3_p8ced"]
 [ext_resource type="PackedScene" uid="uid://blub1slabs8rk" path="res://components/input_synchronizer.tscn" id="4_37g7b"]
 [ext_resource type="PackedScene" uid="uid://b8t7rph6vl3m" path="res://components/projectile_emitter/projectile_emitter.tscn" id="5_rbnk4"]
+[ext_resource type="PackedScene" uid="uid://de6605x8vyoe" path="res://components/scripts/weapon_controller.tscn" id="6_u5ptg"]
+[ext_resource type="PackedScene" uid="uid://dvpdcjkuvgmuc" path="res://components/Weapons/laser_weapon.tscn" id="7_c46e0"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_ywv5q"]
 
@@ -72,11 +74,6 @@ spot_attenuation = 0.0272047
 [node name="input_synchronizer" parent="." instance=ExtResource("4_37g7b")]
 replication_config = SubResource("SceneReplicationConfig_la4et")
 visibility_update_mode = 1
-movement_vector = Vector3(0, 0, 0)
-rotation_vector = Vector3(0, 0, 0)
-rotation_basis = Basis(1, 0, 0, 0, 1, 0, 0, 0, 1)
-is_primary_firing = false
-is_secondary_firing = false
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("SphereMesh_oe5dx")
@@ -85,7 +82,7 @@ mesh = SubResource("SphereMesh_oe5dx")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.3)
 mesh = SubResource("PrismMesh_1c1rf")
 
-[node name="projectile_emitter" parent="." instance=ExtResource("5_rbnk4")]
+[node name="ProjectileEmitter" parent="." instance=ExtResource("5_rbnk4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, -0.5)
 
 [node name="Label3D" type="Label3D" parent="."]
@@ -98,3 +95,7 @@ text = "test
 "
 font = SubResource("FontFile_5nu00")
 uppercase = true
+
+[node name="WeaponController" parent="." instance=ExtResource("6_u5ptg")]
+
+[node name="LaserWeapon" parent="WeaponController" instance=ExtResource("7_c46e0")]

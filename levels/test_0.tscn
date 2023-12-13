@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=3 uid="uid://bm81glk5efyd"]
+
+[ext_resource type="PackedScene" uid="uid://bj1s66x1utt6n" path="res://skybox/skybox.tscn" id="1_2wi8e"]
+[ext_resource type="Resource" uid="uid://2nsdaww3p87k" path="res://skybox/clouds_skybox.tres" id="2_dcfr4"]
+[ext_resource type="PackedScene" uid="uid://b3apavtu2p5ha" path="res://levels/level_0.tscn" id="4_24p3n"]
+[ext_resource type="PackedScene" uid="uid://dv7li2nxvy4yp" path="res://characters/base_enemy.tscn" id="13_ea3ye"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_b40hk"]
+sky_top_color = Color(0, 0.454902, 0.745098, 1)
+sky_horizon_color = Color(0.541176, 0.780392, 1, 1)
+ground_bottom_color = Color(0, 0.454902, 0.623529, 1)
+ground_horizon_color = Color(0.368627, 0.843137, 1, 1)
+ground_curve = 0.0800001
+
+[sub_resource type="Sky" id="Sky_xcpkx"]
+sky_material = SubResource("ProceduralSkyMaterial_b40hk")
+
+[sub_resource type="Environment" id="Environment_1wdsk"]
+background_mode = 1
+background_color = Color(0.27451, 0.27451, 0.27451, 1)
+sky = SubResource("Sky_xcpkx")
+ambient_light_source = 3
+
+[node name="test" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1wdsk")
+
+[node name="skybox" parent="WorldEnvironment" instance=ExtResource("1_2wi8e")]
+sky = ExtResource("2_dcfr4")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(-0.258819, 0.250001, -0.933013, -1.25133e-08, 0.965926, 0.25882, 0.965926, 0.0669874, -0.25, 0, 12, 0)
+visible = false
+
+[node name="BaseEnemy" parent="." instance=ExtResource("13_ea3ye")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 34)
+
+[node name="CyclopsBlocks" parent="." instance=ExtResource("4_24p3n")]

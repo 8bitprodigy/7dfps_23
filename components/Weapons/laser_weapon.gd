@@ -1,5 +1,4 @@
 extends weapon_base
-
 class_name laser_weapon
 
 # Called when the node enters the scene tree for the first time.
@@ -11,5 +10,4 @@ func _process(delta):
 	pass
 
 func fire() -> void:
-	
-	pass
+	get_node("projectile_emitter").fire()

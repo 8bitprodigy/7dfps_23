@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://53o4m2ek7upk"
-path.s3tc="res://.godot/imported/missile_missile_flame0.png-04367a22127a3dafe3b950e35629f40e.s3tc.ctex"
+uid="uid://2dftoahjx2d"
+path.s3tc="res://.godot/imported/missile_missile_tex.png-d1bcfae9b6c2736b1584eca62763aaef.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://entities/projectile/missile_missile_flame0.png"
-dest_files=["res://.godot/imported/missile_missile_flame0.png-04367a22127a3dafe3b950e35629f40e.s3tc.ctex"]
+source_file="res://entities/projectile/missile/missile_missile_tex.png"
+dest_files=["res://.godot/imported/missile_missile_tex.png-d1bcfae9b6c2736b1584eca62763aaef.s3tc.ctex"]
 
 [params]
 

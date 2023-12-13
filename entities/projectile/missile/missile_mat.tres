@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dq2a5k2vajvdw"]
+
+[ext_resource type="Texture2D" uid="uid://d4b3dalix0ein" path="res://entities/projectile/missile/missile_tex.svg" id="1_2rygf"]
+
+[resource]
+resource_name = "Material"
+cull_mode = 2
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+albedo_texture = ExtResource("1_2rygf")

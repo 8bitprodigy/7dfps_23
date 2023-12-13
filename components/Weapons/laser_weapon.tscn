@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://dvpdcjkuvgmuc"]
+[gd_scene load_steps=3 format=3 uid="uid://dvpdcjkuvgmuc"]
+
+[ext_resource type="Script" path="res://components/Weapons/laser_weapon.gd" id="1_wm374"]
+[ext_resource type="PackedScene" uid="uid://b8t7rph6vl3m" path="res://components/projectile_emitter/projectile_emitter.tscn" id="2_88c1o"]
 
 [node name="LaserWeapon" type="Node3D"]
+script = ExtResource("1_wm374")
+
+[node name="projectile_emitter" parent="." instance=ExtResource("2_88c1o")]

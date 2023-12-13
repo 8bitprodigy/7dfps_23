@@ -39,6 +39,9 @@ func _physics_process(delta):
 	rotate(basis.y.normalized(), angular_velocity.y)
 	rotate(basis.z.normalized(), angular_velocity.z)
 	
+	if input_node.is_primary_firing:
+		$ProjectileEmitter.fire()
+	
 	var speed : float = clampf(Input.get_action_strength("throttle") * THROTTLE_MULTIPLIER , 1.0, THROTTLE_MULTIPLIER) * SPEED
 	var direction : Vector3 = (
 		(basis.x * input_node.movement_vector.x) +

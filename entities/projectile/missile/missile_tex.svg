@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="32"
+   height="64"
+   viewBox="0 0 32 64"
+   version="1.1"
+   id="svg2077"
+   sodipodi:docname="missile_tex.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="missile_tex.png"
+   inkscape:export-xdpi="94.610001"
+   inkscape:export-ydpi="94.610001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2081">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient26223">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop26219" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop26221" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient25792">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop25788" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop25790" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient25782">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop25778" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop25780" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient24916">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop24912" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop24914" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient21376">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop21372" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop21374" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient13810">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop13806" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop13808" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient13111">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop13107" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop13109" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient12779">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop12775" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop12777" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6062">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop6058" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop6060" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6029">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop6025" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop6027" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5851">
+      <rect
+         style="fill:#ffcc00;stroke-linecap:round"
+         id="rect5853"
+         width="18"
+         height="10"
+         x="0"
+         y="38" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6029"
+       id="linearGradient6031"
+       x1="9"
+       y1="19"
+       x2="9"
+       y2="33"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient12779"
+       id="linearGradient12781"
+       x1="9"
+       y1="63"
+       x2="9"
+       y2="54"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient13111"
+       id="linearGradient13113"
+       x1="22"
+       y1="64"
+       x2="22"
+       y2="18"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(6)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient13810"
+       id="linearGradient13812"
+       x1="8"
+       y1="48"
+       x2="8"
+       y2="44"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient21376"
+       id="linearGradient21378"
+       x1="22"
+       y1="52"
+       x2="22"
+       y2="24"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(6)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient24916"
+       id="linearGradient24918"
+       x1="22"
+       y1="59"
+       x2="22"
+       y2="20"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(6)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient25782"
+       id="linearGradient25784"
+       x1="28"
+       y1="63"
+       x2="28"
+       y2="48"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-8)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient25792"
+       id="linearGradient25794"
+       x1="28"
+       y1="40"
+       x2="28"
+       y2="64"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-8)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient26223"
+       id="linearGradient26225"
+       x1="31"
+       y1="1"
+       x2="12"
+       y2="1"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6062"
+       id="linearGradient40176"
+       gradientUnits="userSpaceOnUse"
+       x1="8.4224234"
+       y1="18"
+       x2="8.4224234"
+       y2="13"
+       gradientTransform="matrix(0.90448127,0,0,1,-21.617924,13)" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview2079"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="true"
+     inkscape:zoom="32"
+     inkscape:cx="15.25"
+     inkscape:cy="24.484375"
+     inkscape:window-width="1722"
+     inkscape:window-height="1362"
+     inkscape:window-x="830"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3478"
+       empspacing="4" />
+  </sodipodi:namedview>
+  <desc
+     id="desc1959">missile.blend, (Blender 3.6.2)</desc>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="UV Layout"
+     sodipodi:insensitive="true"
+     style="display:inline">
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="25,63 25,19 19,19 19,63 "
+       id="polygon1961" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="13,6 7,0 1,6 7,12 "
+       id="polygon1963" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="19,19 19,63 25,63 25,19 "
+       id="polygon1965" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="25,63 25,19 19,19 19,63 "
+       id="polygon1967" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="25,63 25,19 19,19 19,63 "
+       id="polygon1969" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,19 12,13 6,13 6,19 "
+       id="polygon1971" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="22,16 22,9 15,9 15,16 "
+       id="polygon1973" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,19 12,13 6,13 6,19 "
+       id="polygon1975" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,19 12,13 6,13 6,19 "
+       id="polygon1977" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,19 12,13 6,13 6,19 "
+       id="polygon1979" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="27,40 27,55 30,55 30,40 "
+       id="polygon1981" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="31,1 12,1 25,8 "
+       id="polygon1983" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,1 31,1 25,8 "
+       id="polygon1985" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="30,63 30,55 27,55 27,63 "
+       id="polygon1987" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="31,1 12,1 25,8 "
+       id="polygon1989" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,1 31,1 25,8 "
+       id="polygon1991" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="27,40 27,55 30,55 30,40 "
+       id="polygon1993" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="27,40 27,55 30,55 30,40 "
+       id="polygon1995" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="30,63 30,55 27,55 27,63 "
+       id="polygon1997" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="31,1 12,1 25,8 "
+       id="polygon1999" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,1 31,1 25,8 "
+       id="polygon2001" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="30,63 30,55 27,55 27,63 "
+       id="polygon2003" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="31,1 12,1 25,8 "
+       id="polygon2005" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,1 31,1 25,8 "
+       id="polygon2007" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="27,40 27,55 30,55 30,40 "
+       id="polygon2009" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="30,63 30,55 27,55 27,63 "
+       id="polygon2011" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="17,32 9,32 9,54 17,54 "
+       id="polygon2013" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="9,32 1,32 1,54 9,54 "
+       id="polygon2015" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="17,32 9,32 9,54 17,54 "
+       id="polygon2017" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="9,32 1,32 1,54 9,54 "
+       id="polygon2019" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="17,32 9,32 9,54 17,54 "
+       id="polygon2021" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="9,32 1,32 1,54 9,54 "
+       id="polygon2023" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="17,32 9,32 9,54 17,54 "
+       id="polygon2025" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="9,32 1,32 1,54 9,54 "
+       id="polygon2027" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="6,63 9,54 1,54 "
+       id="polygon2029" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,63 9,54 6,63 "
+       id="polygon2031" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="9,54 12,63 17,54 "
+       id="polygon2033" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="9,54 1,54 6,63 "
+       id="polygon2035" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="6,63 12,63 9,54 "
+       id="polygon2037" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="17,54 9,54 12,63 "
+       id="polygon2039" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="6,63 9,54 1,54 "
+       id="polygon2041" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="6,63 12,63 9,54 "
+       id="polygon2043" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="17,54 9,54 12,63 "
+       id="polygon2045" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="6,63 9,54 1,54 "
+       id="polygon2047" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="6,63 12,63 9,54 "
+       id="polygon2049" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="17,54 9,54 12,63 "
+       id="polygon2051" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,19 9,32 17,32 "
+       id="polygon2053" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="6,19 9,32 12,19 "
+       id="polygon2055" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="9,32 6,19 1,32 "
+       id="polygon2057" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="17,32 12,19 9,32 "
+       id="polygon2059" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,19 6,19 9,32 "
+       id="polygon2061" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="6,19 1,32 9,32 "
+       id="polygon2063" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="17,32 12,19 9,32 "
+       id="polygon2065" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,19 6,19 9,32 "
+       id="polygon2067" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="1,32 9,32 6,19 "
+       id="polygon2069" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,19 9,32 17,32 "
+       id="polygon2071" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="12,19 6,19 9,32 "
+       id="polygon2073" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="1,32 9,32 6,19 "
+       id="polygon2075" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="color"
+     style="display:inline">
+    <rect
+       style="fill:#999999;stroke-linecap:round"
+       id="rect5522"
+       width="32"
+       height="64"
+       x="0"
+       y="0" />
+    <path
+       id="rect6583"
+       style="opacity:1;fill:#4a4b50;stroke-linecap:round"
+       d="m 0,12 h 4 9 v 7 h 11 l 1,-1 h 7 V 64 H 0 V 19 Z"
+       sodipodi:nodetypes="ccccccccccc" />
+    <path
+       id="rect9929"
+       style="opacity:1;fill:#d40000;stroke-linecap:round"
+       d="M 0,0 V 19 H 18 L 13,14 V 7 h 3 4 l 2,1 v 0 l 2,1 h 1 v 9 h 7 V 0 Z m 18,19 v 45 h 6 V 19 Z"
+       sodipodi:nodetypes="cccccccccccccccccccc" />
+    <rect
+       style="opacity:1;fill:#333333;fill-opacity:1;stroke:none;stroke-linecap:round"
+       id="rect13933"
+       width="18"
+       height="45"
+       x="0"
+       y="19" />
+    <path
+       id="rect9922"
+       style="opacity:0.5;fill:#ffffff;stroke-linecap:round"
+       d="m 25,9 v 9 l -1,1 H 18 L 13,14 V 7 h 3 4 l 2,1 v 0 l 2,1 z"
+       sodipodi:nodetypes="cccccccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="detail"
+     style="display:inline;fill:#ffcc00">
+    <rect
+       style="fill:#ffcc00;stroke-linecap:round"
+       id="rect5629"
+       width="18"
+       height="10"
+       x="0"
+       y="38" />
+    <path
+       id="rect5631"
+       style="fill:#000000;stroke-linecap:round"
+       d="m -8,38 -9,10 h 3 l 9,-10 z m 9,0 -9,10 h 4 L 5,38 Z m 8,0 -9,10 h 4 l 9,-10 z m 8,0 -9,10 h 4 l 9,-10 z m 8,0 -9,10 h 3 l 9,-10 z"
+       clip-path="url(#clipPath5851)"
+       sodipodi:nodetypes="ccccccccccccccccccccccccc" />
+    <rect
+       style="opacity:0.12;fill:#ffffff;stroke-linecap:round"
+       id="rect5855"
+       width="18"
+       height="1"
+       x="0"
+       y="37" />
+    <rect
+       style="opacity:0.25;fill:#000000;stroke-linecap:round"
+       id="rect5961"
+       width="18"
+       height="1"
+       x="0"
+       y="48" />
+    <rect
+       style="opacity:0.5;fill:url(#linearGradient6031);fill-opacity:1;stroke-linecap:round"
+       id="rect5963"
+       width="18"
+       height="12"
+       x="0"
+       y="19" />
+    <rect
+       style="opacity:0;fill:#000000;fill-opacity:1;stroke:none;stroke-linecap:round"
+       id="rect7261"
+       width="18"
+       height="1"
+       x="0"
+       y="48" />
+    <rect
+       style="opacity:0.03;fill:#ffffff;stroke-linecap:round"
+       id="rect8179"
+       width="18"
+       height="1"
+       x="0"
+       y="31" />
+    <rect
+       style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none;stroke-linecap:round"
+       id="rect10085"
+       width="18"
+       height="1"
+       x="0"
+       y="19" />
+    <rect
+       style="opacity:0.12;fill:#ffffff;stroke-linecap:round"
+       id="rect11839"
+       width="18"
+       height="2"
+       x="0"
+       y="62" />
+    <rect
+       style="opacity:0.12;fill:#ffffff;stroke-linecap:round"
+       id="rect11841"
+       width="18"
+       height="1"
+       x="0"
+       y="54" />
+    <rect
+       style="opacity:0.25;fill:url(#linearGradient12781);fill-opacity:1;stroke:none;stroke-linecap:round"
+       id="rect12773"
+       width="18"
+       height="9"
+       x="0"
+       y="55" />
+    <path
+       id="rect13104"
+       style="opacity:0.25;fill:url(#linearGradient13113);fill-opacity:1;stroke-linecap:round"
+       d="m 24,19 1,-1 h 7 v 46 h -8 z"
+       sodipodi:nodetypes="cccccc" />
+    <rect
+       style="opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none;stroke-linecap:round"
+       id="rect13115"
+       width="8"
+       height="1"
+       x="24"
+       y="63" />
+    <path
+       id="rect13117"
+       style="opacity:0.25;fill:#000000;stroke-linecap:round"
+       d="m 24,19 1,-1 h 7 v 2 h -8 z"
+       sodipodi:nodetypes="cccccc" />
+    <rect
+       style="opacity:0.5;fill:url(#linearGradient13812);fill-opacity:1;stroke:none;stroke-linecap:round"
+       id="rect13804"
+       width="18"
+       height="4"
+       x="0"
+       y="44" />
+    <path
+       id="rect24909"
+       style="opacity:0.5;fill:url(#linearGradient24918);fill-opacity:1;stroke-linecap:round"
+       d="m 24,20 h 8 l -3,39 h -2 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect17371"
+       style="opacity:0.75;fill:url(#linearGradient21378);fill-opacity:1;stroke-linecap:round"
+       d="m 28,24 c 0.554,0 1,12.014 1,17 V 59 H 27 V 41 c 0,-4.986 0.446,-17 1,-17 z"
+       sodipodi:nodetypes="ssccss" />
+    <rect
+       style="opacity:0.5;fill:url(#linearGradient25784);fill-opacity:1;stroke:none;stroke-linecap:round"
+       id="rect25776"
+       width="6"
+       height="9"
+       x="18"
+       y="55" />
+    <rect
+       style="opacity:0.5;fill:url(#linearGradient25794);fill-opacity:1;stroke:none;stroke-linecap:round"
+       id="rect25786"
+       width="6"
+       height="16"
+       x="18"
+       y="39" />
+    <path
+       id="rect26216"
+       style="opacity:0.25;fill:url(#linearGradient26225);fill-opacity:1;stroke-linecap:round"
+       d="M 9,0 H 32 V 9 H 24 L 22,8 V 8 L 20,7 h -4 z"
+       sodipodi:nodetypes="ccccccccc" />
+    <rect
+       style="opacity:0.5;fill:url(#linearGradient40176);fill-opacity:1;stroke-width:0.951042;stroke-linecap:round"
+       id="rect40174"
+       width="8.999999"
+       height="7"
+       x="-18"
+       y="25"
+       transform="rotate(-90)" />
+    <g
+       id="g40180"
+       transform="translate(-0.0234375,-0.00156212)">
+      <circle
+         style="opacity:0.75;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1.2;stroke-linecap:round"
+         id="circle6335"
+         cx="19.023438"
+         cy="-13.001562"
+         r="2.4000001"
+         transform="scale(1,-1)" />
+      <circle
+         style="fill:#000000;stroke:none;stroke-width:1.2;stroke-linecap:round"
+         id="circle9925"
+         cx="19.023438"
+         cy="-13.001562"
+         r="2.4000001"
+         transform="scale(1,-1)" />
+    </g>
+    <circle
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+       id="path40189"
+       cx="3.5"
+       cy="9.5"
+       r="4.5" />
+    <circle
+       style="opacity:1;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+       id="path40191"
+       cx="3.5"
+       cy="9.5"
+       r="3.5" />
+    <ellipse
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+       id="path40203"
+       cx="2.5"
+       cy="8.5"
+       rx="0.5"
+       ry="1.5" />
+    <ellipse
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+       id="path40205"
+       cx="4.5"
+       cy="8.5"
+       rx="0.5"
+       ry="1.5" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+       d="m 1,10 c 1,2 4,2 5,0"
+       id="path40270"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
