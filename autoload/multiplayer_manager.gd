@@ -98,6 +98,9 @@ func add_player(peer_id:int):
 	player.velocity = Vector3.ZERO
 	player_list.append(player)
 
+func add_scene(new_scene:Node):
+	get_node(spawn_path).add_child(new_scene)
+
 func remove_player(peer_id:int):
 	prints("Peer Disconnected: ", peer_id)
 	var player = get_node(spawn_path).get_node_or_null(str(peer_id))

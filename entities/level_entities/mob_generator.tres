@@ -1,0 +1,4 @@
+[gd_resource type="BoxMesh" format=3 uid="uid://bbh2ver658u4c"]
+
+[resource]
+lightmap_size_hint = Vector2i(14, 21)

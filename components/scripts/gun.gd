@@ -1,7 +1,7 @@
 extends Node3D
 class_name Gun
 
-@export_node_path("InputSynchronizer") var _input_synchronizer : NodePath
+@export_node_path("BaseInputController") var _input_synchronizer : NodePath
 @onready var input : Node = get_node(_input_synchronizer)
 @export_node_path("Marker3D") var _muzzle_point : NodePath
 @onready var muzzle : Node = get_node(_muzzle_point)

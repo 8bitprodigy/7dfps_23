@@ -84,3 +84,9 @@ res://entities/level_entities/PlayerSpawn3D.gd
 res://entities/level_entities/spawn_visualizer.tres
 res://entities/level_entities/spawn_point_3D.tscn
 res://entities/level_entities/SpawnPoint3D.gd
+res://entities/level_entities/mob_generator.tscn
+res://entities/level_entities/mob_generator.tres
+res://entities/level_entities/mob_generator.gd
+res://components/health_component/health_component.gd
+res://components/scripts/gun.gd
+res://components/scripts/hitbox_component.gd

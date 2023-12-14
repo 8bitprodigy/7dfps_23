@@ -69,6 +69,7 @@ animations = [{
 [node name="projectile" type="ShapeCast3D" groups=["cleanup", "projectiles"]]
 shape = SubResource("SphereShape3D_dd5dw")
 target_position = Vector3(0, 0, 0)
+collision_mask = 15
 script = ExtResource("1_7ctav")
 attack = SubResource("Resource_yol6u")
 

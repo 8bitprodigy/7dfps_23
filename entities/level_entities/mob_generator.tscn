@@ -1,0 +1,65 @@
+[gd_scene load_steps=13 format=3 uid="uid://c1y33jel7vir0"]
+
+[ext_resource type="Script" path="res://entities/level_entities/SpawnPoint3D.gd" id="1_35l8r"]
+[ext_resource type="Script" path="res://entities/level_entities/mob_generator.gd" id="1_pweu1"]
+[ext_resource type="PackedScene" uid="uid://dv7li2nxvy4yp" path="res://characters/base_enemy.tscn" id="2_bydbw"]
+[ext_resource type="Material" uid="uid://nkxdq7vkivbe" path="res://materials/cgrate1.res" id="2_dgpir"]
+[ext_resource type="BoxMesh" uid="uid://bbh2ver658u4c" path="res://entities/level_entities/mob_generator.tres" id="3_f0mrm"]
+[ext_resource type="Texture2D" uid="uid://cpdlvdd357xxh" path="res://art/sprites/tfoga0.png" id="4_pwl1m"]
+[ext_resource type="Texture2D" uid="uid://cihjytjjwos0u" path="res://art/sprites/tfogb0.png" id="5_0gren"]
+[ext_resource type="Script" path="res://components/health_component/health_component.gd" id="7_s8mny"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_jfdkl"]
+frames = 2
+frame_0/texture = ExtResource("4_pwl1m")
+frame_0/duration = 0.13
+frame_1/texture = ExtResource("5_0gren")
+frame_1/duration = 0.13
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_sreh4"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_705ki"]
+radius = 25.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_61jyk"]
+
+[node name="MobGenerator" type="StaticBody3D"]
+collision_layer = 6
+collision_mask = 0
+script = ExtResource("1_pweu1")
+mob = ExtResource("2_bydbw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("2_dgpir")
+mesh = ExtResource("3_f0mrm")
+
+[node name="Sprite3D" type="Sprite3D" parent="MeshInstance3D"]
+pixel_size = 0.015
+billboard = 1
+alpha_cut = 1
+texture = SubResource("AnimatedTexture_jfdkl")
+
+[node name="SpawnPoint3D" type="Area3D" parent="."]
+visible = false
+script = ExtResource("1_35l8r")
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="."]
+shape = SubResource("SphereShape3D_sreh4")
+target_position = Vector3(0, 0, -1)
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_705ki")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_61jyk")
+
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("7_s8mny")
+MAX_HEALTH = 10.0
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
