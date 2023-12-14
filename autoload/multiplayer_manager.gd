@@ -87,11 +87,14 @@ func join(network_option:int,address_entry:String):
 
 @rpc
 func add_player(peer_id:int):
+	var player_spawn_points = get_tree().get_nodes_in_group("player_spawn")
+	assert( player_spawn_points.size()>0, "Cannot spawn player: No spawn points in level!")
 	var player = _Player.instantiate()
 	player.name = str(peer_id)
 	player.player = peer_id
 	get_node(spawn_path).add_child(player)
-	player.global_position = Vector3.ZERO
+	#player.global_position = Vector3.ZERO
+	assert(player_spawn_points[0].spawn(player), "Cannot spawn player: Collision body in spawn area!")
 	player.velocity = Vector3.ZERO
 	player_list.append(player)
 

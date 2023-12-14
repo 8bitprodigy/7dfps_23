@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://bm81glk5efyd"]
 
 [ext_resource type="PackedScene" uid="uid://bj1s66x1utt6n" path="res://skybox/skybox.tscn" id="1_2wi8e"]
-[ext_resource type="Resource" uid="uid://2nsdaww3p87k" path="res://skybox/clouds_skybox.tres" id="2_dcfr4"]
+[ext_resource type="Resource" uid="uid://6i70w2p2u1os" path="res://skybox/space_skybox.tres" id="2_3ndhp"]
 [ext_resource type="PackedScene" uid="uid://b3apavtu2p5ha" path="res://levels/level_0.tscn" id="4_24p3n"]
 [ext_resource type="PackedScene" uid="uid://dv7li2nxvy4yp" path="res://characters/base_enemy.tscn" id="13_ea3ye"]
 
@@ -27,7 +27,7 @@ ambient_light_source = 3
 environment = SubResource("Environment_1wdsk")
 
 [node name="skybox" parent="WorldEnvironment" instance=ExtResource("1_2wi8e")]
-sky = ExtResource("2_dcfr4")
+sky = ExtResource("2_3ndhp")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
 transform = Transform3D(-0.258819, 0.250001, -0.933013, -1.25133e-08, 0.965926, 0.25882, 0.965926, 0.0669874, -0.25, 0, 12, 0)

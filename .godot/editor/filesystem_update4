@@ -79,3 +79,8 @@ res://materials/w32_5.tres
 res://materials/w32_4.tres
 res://materials/w33_5.tres
 res://levels/test_0.tscn
+res://entities/level_entities/player_spawn_3d.tscn
+res://entities/level_entities/PlayerSpawn3D.gd
+res://entities/level_entities/spawn_visualizer.tres
+res://entities/level_entities/spawn_point_3D.tscn
+res://entities/level_entities/SpawnPoint3D.gd

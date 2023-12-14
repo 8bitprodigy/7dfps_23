@@ -242,8 +242,20 @@
        x1="8.4224234"
        y1="18"
        x2="8.4224234"
-       y2="13"
+       y2="11"
        gradientTransform="matrix(0.90448127,0,0,1,-21.617924,13)" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath43650">
+      <rect
+         style="opacity:1;fill:#333333;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect43652"
+         width="15.5"
+         height="8.5"
+         x="9.5"
+         y="-20.5"
+         transform="rotate(90)" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="namedview2079"
@@ -255,19 +267,21 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      showgrid="true"
-     inkscape:zoom="32"
-     inkscape:cx="15.25"
-     inkscape:cy="24.484375"
+     inkscape:zoom="45.254834"
+     inkscape:cx="22.826291"
+     inkscape:cy="27.190465"
      inkscape:window-width="1722"
      inkscape:window-height="1362"
      inkscape:window-x="830"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer2">
+     inkscape:current-layer="layer3">
     <inkscape:grid
        type="xygrid"
        id="grid3478"
-       empspacing="4" />
+       empspacing="4"
+       spacingx="0.5"
+       spacingy="0.5" />
   </sodipodi:namedview>
   <desc
      id="desc1959">missile.blend, (Blender 3.6.2)</desc>
@@ -275,414 +289,428 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="UV Layout"
-     sodipodi:insensitive="true"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="25,63 25,19 19,19 19,63 "
-       id="polygon1961" />
+       points="31,62.016 31,18.703 25,18.703 25,62.016 "
+       id="polygon42510" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="13,6 7,0 1,6 7,12 "
-       id="polygon1963" />
+       points="1,1 8,8 1,15 "
+       id="polygon42512" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="19,19 19,63 25,63 25,19 "
-       id="polygon1965" />
+       points="25,18.703 25,62.016 31,62.016 31,18.703 "
+       id="polygon42514" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="25,63 25,19 19,19 19,63 "
-       id="polygon1967" />
+       points="31,62.016 31,18.703 25,18.703 25,62.016 "
+       id="polygon42516" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="25,63 25,19 19,19 19,63 "
-       id="polygon1969" />
+       points="31,62.016 31,18.703 25,18.703 25,62.016 "
+       id="polygon42518" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,19 12,13 6,13 6,19 "
-       id="polygon1971" />
+       points="26,16 31,16 31,10 26,10 "
+       id="polygon42520" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="22,16 22,9 15,9 15,16 "
-       id="polygon1973" />
+       points="2,17 23,17 13,7 "
+       id="polygon42522" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,19 12,13 6,13 6,19 "
-       id="polygon1975" />
+       points="26,16 31,16 31,10 26,10 "
+       id="polygon42524" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,19 12,13 6,13 6,19 "
-       id="polygon1977" />
+       points="26,16 31,16 31,10 26,10 "
+       id="polygon42526" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,19 12,13 6,13 6,19 "
-       id="polygon1979" />
+       points="26,16 31,16 31,10 26,10 "
+       id="polygon42528" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="27,40 27,55 30,55 30,40 "
-       id="polygon1981" />
+       points="23,54.141 23,39.375 20,39.375 20,54.141 "
+       id="polygon42530" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="31,1 12,1 25,8 "
-       id="polygon1983" />
+       points="12,0.984 25,7.875 31,0.984 "
+       id="polygon42532" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,1 31,1 25,8 "
-       id="polygon1985" />
+       points="31,0.984 25,7.875 12,0.984 "
+       id="polygon42534" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="30,63 30,55 27,55 27,63 "
-       id="polygon1987" />
+       points="20,54.141 20,62.016 23,62.016 23,54.141 "
+       id="polygon42536" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="31,1 12,1 25,8 "
-       id="polygon1989" />
+       points="12,0.984 25,7.875 31,0.984 "
+       id="polygon42538" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,1 31,1 25,8 "
-       id="polygon1991" />
+       points="31,0.984 25,7.875 12,0.984 "
+       id="polygon42540" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="27,40 27,55 30,55 30,40 "
-       id="polygon1993" />
+       points="23,54.141 23,39.375 20,39.375 20,54.141 "
+       id="polygon42542" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="27,40 27,55 30,55 30,40 "
-       id="polygon1995" />
+       points="23,54.141 23,39.375 20,39.375 20,54.141 "
+       id="polygon42544" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="30,63 30,55 27,55 27,63 "
-       id="polygon1997" />
+       points="20,54.141 20,62.016 23,62.016 23,54.141 "
+       id="polygon42546" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="31,1 12,1 25,8 "
-       id="polygon1999" />
+       points="12,0.984 25,7.875 31,0.984 "
+       id="polygon42548" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,1 31,1 25,8 "
-       id="polygon2001" />
+       points="31,0.984 25,7.875 12,0.984 "
+       id="polygon42550" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="30,63 30,55 27,55 27,63 "
-       id="polygon2003" />
+       points="20,54.141 20,62.016 23,62.016 23,54.141 "
+       id="polygon42552" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="31,1 12,1 25,8 "
-       id="polygon2005" />
+       points="12,0.984 25,7.875 31,0.984 "
+       id="polygon42554" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,1 31,1 25,8 "
-       id="polygon2007" />
+       points="31,0.984 25,7.875 12,0.984 "
+       id="polygon42556" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="27,40 27,55 30,55 30,40 "
-       id="polygon2009" />
+       points="23,54.141 23,39.375 20,39.375 20,54.141 "
+       id="polygon42558" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="30,63 30,55 27,55 27,63 "
-       id="polygon2011" />
+       points="20,54.141 20,62.016 23,62.016 23,54.141 "
+       id="polygon42560" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="17,32 9,32 9,54 17,54 "
-       id="polygon2013" />
+       points="9,53.156 17,53.156 17,31.5 9,31.5 "
+       id="polygon42562" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="9,32 1,32 1,54 9,54 "
-       id="polygon2015" />
+       points="1,53.156 9,53.156 9,31.5 1,31.5 "
+       id="polygon42564" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="17,32 9,32 9,54 17,54 "
-       id="polygon2017" />
+       points="9,53.156 17,53.156 17,31.5 9,31.5 "
+       id="polygon42566" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="9,32 1,32 1,54 9,54 "
-       id="polygon2019" />
+       points="1,53.156 9,53.156 9,31.5 1,31.5 "
+       id="polygon42568" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="17,32 9,32 9,54 17,54 "
-       id="polygon2021" />
+       points="9,53.156 17,53.156 17,31.5 9,31.5 "
+       id="polygon42570" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="9,32 1,32 1,54 9,54 "
-       id="polygon2023" />
+       points="1,53.156 9,53.156 9,31.5 1,31.5 "
+       id="polygon42572" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="17,32 9,32 9,54 17,54 "
-       id="polygon2025" />
+       points="9,53.156 17,53.156 17,31.5 9,31.5 "
+       id="polygon42574" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="9,32 1,32 1,54 9,54 "
-       id="polygon2027" />
+       points="1,53.156 9,53.156 9,31.5 1,31.5 "
+       id="polygon42576" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="6,63 9,54 1,54 "
-       id="polygon2029" />
+       points="9,54.141 1,54.141 2,62.016 "
+       id="polygon42578" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,63 9,54 6,63 "
-       id="polygon2031" />
+       points="9,54.141 6,62.016 12,62.016 "
+       id="polygon42580" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="9,54 12,63 17,54 "
-       id="polygon2033" />
+       points="16,62.016 17,54.141 9,54.141 "
+       id="polygon42582" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="9,54 1,54 6,63 "
-       id="polygon2035" />
+       points="1,54.141 2,62.016 9,54.141 "
+       id="polygon42584" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="6,63 12,63 9,54 "
-       id="polygon2037" />
+       points="12,62.016 9,54.141 6,62.016 "
+       id="polygon42586" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="17,54 9,54 12,63 "
-       id="polygon2039" />
+       points="9,54.141 16,62.016 17,54.141 "
+       id="polygon42588" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="6,63 9,54 1,54 "
-       id="polygon2041" />
+       points="9,54.141 1,54.141 2,62.016 "
+       id="polygon42590" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="6,63 12,63 9,54 "
-       id="polygon2043" />
+       points="12,62.016 9,54.141 6,62.016 "
+       id="polygon42592" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="17,54 9,54 12,63 "
-       id="polygon2045" />
+       points="9,54.141 16,62.016 17,54.141 "
+       id="polygon42594" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="6,63 9,54 1,54 "
-       id="polygon2047" />
+       points="9,54.141 1,54.141 2,62.016 "
+       id="polygon42596" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="6,63 12,63 9,54 "
-       id="polygon2049" />
+       points="12,62.016 9,54.141 6,62.016 "
+       id="polygon42598" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="17,54 9,54 12,63 "
-       id="polygon2051" />
+       points="9,54.141 16,62.016 17,54.141 "
+       id="polygon42600" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,19 9,32 17,32 "
-       id="polygon2053" />
+       points="9,30.516 17,30.516 14,18.703 "
+       id="polygon42602" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="6,19 9,32 12,19 "
-       id="polygon2055" />
+       points="9,30.516 12,18.703 6,18.703 "
+       id="polygon42604" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="9,32 6,19 1,32 "
-       id="polygon2057" />
+       points="4,18.703 1,30.516 9,30.516 "
+       id="polygon42606" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="17,32 12,19 9,32 "
-       id="polygon2059" />
+       points="14,18.703 9,30.516 17,30.516 "
+       id="polygon42608" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,19 6,19 9,32 "
-       id="polygon2061" />
+       points="6,18.703 9,30.516 12,18.703 "
+       id="polygon42610" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="6,19 1,32 9,32 "
-       id="polygon2063" />
+       points="1,30.516 9,30.516 4,18.703 "
+       id="polygon42612" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="17,32 12,19 9,32 "
-       id="polygon2065" />
+       points="14,18.703 9,30.516 17,30.516 "
+       id="polygon42614" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,19 6,19 9,32 "
-       id="polygon2067" />
+       points="6,18.703 9,30.516 12,18.703 "
+       id="polygon42616" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="1,32 9,32 6,19 "
-       id="polygon2069" />
+       points="9,30.516 4,18.703 1,30.516 "
+       id="polygon42618" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,19 9,32 17,32 "
-       id="polygon2071" />
+       points="9,30.516 17,30.516 14,18.703 "
+       id="polygon42620" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="12,19 6,19 9,32 "
-       id="polygon2073" />
+       points="6,18.703 9,30.516 12,18.703 "
+       id="polygon42622" />
     <polygon
        stroke="#000000"
        stroke-width="1"
        fill="#cccccc"
        fill-opacity="0.25"
-       points="1,32 9,32 6,19 "
-       id="polygon2075" />
+       points="9,30.516 4,18.703 1,30.516 "
+       id="polygon42624" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="2,17 13,7 23,17 "
+       id="polygon42626" />
+    <polygon
+       stroke="#000000"
+       stroke-width="1"
+       fill="#cccccc"
+       fill-opacity="0.25"
+       points="1,15 8,8 1,1 "
+       id="polygon42628" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -699,25 +727,25 @@
     <path
        id="rect6583"
        style="opacity:1;fill:#4a4b50;stroke-linecap:round"
-       d="m 0,12 h 4 9 v 7 h 11 l 1,-1 h 7 V 64 H 0 V 19 Z"
+       d="m 1,19 h 4 l 8,-7 v 7 h 10 l 1,-1 h 8 V 64 H 0 V 19 Z"
        sodipodi:nodetypes="ccccccccccc" />
     <path
        id="rect9929"
        style="opacity:1;fill:#d40000;stroke-linecap:round"
-       d="M 0,0 V 19 H 18 L 13,14 V 7 h 3 4 l 2,1 v 0 l 2,1 h 1 v 9 h 7 V 0 Z m 18,19 v 45 h 6 V 19 Z"
-       sodipodi:nodetypes="cccccccccccccccccccc" />
+       d="m 1,18 h 17 v 1 h 5 l 1,-1 h 8 V 0 H 2.5 L 10,8 Z m 17,1 v 45 h 5 V 19 Z"
+       sodipodi:nodetypes="ccccccccccccccc" />
     <rect
        style="opacity:1;fill:#333333;fill-opacity:1;stroke:none;stroke-linecap:round"
        id="rect13933"
        width="18"
-       height="45"
+       height="46"
        x="0"
-       y="19" />
+       y="18" />
     <path
        id="rect9922"
        style="opacity:0.5;fill:#ffffff;stroke-linecap:round"
-       d="m 25,9 v 9 l -1,1 H 18 L 13,14 V 7 h 3 4 l 2,1 v 0 l 2,1 z"
-       sodipodi:nodetypes="cccccccccccc" />
+       d="M 0,0 H 2.5 L 10,8 1,18 H 0 Z"
+       sodipodi:nodetypes="cccccc" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -755,9 +783,9 @@
        style="opacity:0.5;fill:url(#linearGradient6031);fill-opacity:1;stroke-linecap:round"
        id="rect5963"
        width="18"
-       height="12"
+       height="13"
        x="0"
-       y="19" />
+       y="18" />
     <rect
        style="opacity:0;fill:#000000;fill-opacity:1;stroke:none;stroke-linecap:round"
        id="rect7261"
@@ -776,9 +804,9 @@
        style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none;stroke-linecap:round"
        id="rect10085"
        width="18"
-       height="1"
+       height="2"
        x="0"
-       y="19" />
+       y="18" />
     <rect
        style="opacity:0.12;fill:#ffffff;stroke-linecap:round"
        id="rect11839"
@@ -803,19 +831,19 @@
     <path
        id="rect13104"
        style="opacity:0.25;fill:url(#linearGradient13113);fill-opacity:1;stroke-linecap:round"
-       d="m 24,19 1,-1 h 7 v 46 h -8 z"
+       d="m 23,19 1,-1 h 8 v 46 h -9 z"
        sodipodi:nodetypes="cccccc" />
     <rect
        style="opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none;stroke-linecap:round"
        id="rect13115"
-       width="8"
+       width="9"
        height="1"
-       x="24"
+       x="23"
        y="63" />
     <path
        id="rect13117"
        style="opacity:0.25;fill:#000000;stroke-linecap:round"
-       d="m 24,19 1,-1 h 7 v 2 h -8 z"
+       d="m 23,19 1,-1 h 8 v 2 h -9 z"
        sodipodi:nodetypes="cccccc" />
     <rect
        style="opacity:0.5;fill:url(#linearGradient13812);fill-opacity:1;stroke:none;stroke-linecap:round"
@@ -837,14 +865,14 @@
     <rect
        style="opacity:0.5;fill:url(#linearGradient25784);fill-opacity:1;stroke:none;stroke-linecap:round"
        id="rect25776"
-       width="6"
+       width="5"
        height="9"
        x="18"
        y="55" />
     <rect
        style="opacity:0.5;fill:url(#linearGradient25794);fill-opacity:1;stroke:none;stroke-linecap:round"
        id="rect25786"
-       width="6"
+       width="5"
        height="16"
        x="18"
        y="39" />
@@ -863,9 +891,9 @@
        transform="rotate(-90)" />
     <g
        id="g40180"
-       transform="translate(-0.0234375,-0.00156212)">
+       transform="translate(-18.023437,-5.0015621)">
       <circle
-         style="opacity:0.75;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1.2;stroke-linecap:round"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none"
          id="circle6335"
          cx="19.023438"
          cy="-13.001562"
@@ -879,36 +907,83 @@
          r="2.4000001"
          transform="scale(1,-1)" />
     </g>
-    <circle
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
-       id="path40189"
-       cx="3.5"
-       cy="9.5"
-       r="4.5" />
-    <circle
+    <g
+       id="g41129"
+       transform="rotate(-90,-13.5,21.5)">
+      <circle
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+         id="path40189"
+         cx="3.5"
+         cy="9.5"
+         r="4.5" />
+      <circle
+         style="opacity:1;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+         id="path40191"
+         cx="3.5"
+         cy="9.5"
+         r="3.5" />
+      <ellipse
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+         id="path40203"
+         cx="2.5"
+         cy="8.5"
+         rx="0.5"
+         ry="1.5" />
+      <ellipse
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+         id="path40205"
+         cx="4.5"
+         cy="8.5"
+         rx="0.5"
+         ry="1.5" />
+      <path
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+         d="m 1,10 c 1,2 4,2 5,0"
+         id="path40270"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <ellipse
        style="opacity:1;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
-       id="path40191"
-       cx="3.5"
-       cy="9.5"
-       r="3.5" />
-    <ellipse
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
-       id="path40203"
-       cx="2.5"
-       cy="8.5"
+       id="path43621"
+       cx="11.5"
+       cy="15.5"
        rx="0.5"
        ry="1.5" />
-    <ellipse
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
-       id="path40205"
-       cx="4.5"
-       cy="8.5"
-       rx="0.5"
-       ry="1.5" />
-    <path
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
-       d="m 1,10 c 1,2 4,2 5,0"
-       id="path40270"
-       sodipodi:nodetypes="cc" />
+    <g
+       id="g43646"
+       transform="rotate(-90,13,17)"
+       clip-path="url(#clipPath43650)">
+      <circle
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+         id="path43561"
+         cx="13"
+         cy="17"
+         r="6" />
+      <circle
+         style="opacity:1;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+         id="path43619"
+         cx="13"
+         cy="17"
+         r="5" />
+      <ellipse
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+         id="path43631"
+         cx="14.5"
+         cy="16"
+         rx="0.5"
+         ry="2" />
+      <ellipse
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.755906;stroke-linecap:round;stroke-dasharray:none"
+         id="path43633"
+         cx="11.5"
+         cy="16"
+         rx="0.5"
+         ry="2" />
+      <path
+         id="path43635"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="M 9.6484375,18 C 10.090408,19.482415 11.453103,20.498878 13,20.5 14.546897,20.4989 15.909592,19.482415 16.351562,18"
+         sodipodi:nodetypes="ccc" />
+    </g>
   </g>
 </svg>

@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://c5v2fa0w3lpf8"]
+
+[ext_resource type="Script" path="res://entities/level_entities/SpawnPoint3D.gd" id="1_0iqtu"]
+[ext_resource type="Texture2D" uid="uid://bdbggyuul3asp" path="res://entities/level_entities/player_spawn.png" id="2_qtouj"]
+[ext_resource type="Material" uid="uid://dc6nrbapnd7hc" path="res://entities/level_entities/spawn_visualizer.tres" id="3_fg2go"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_sry8n"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_blg50"]
+material = ExtResource("3_fg2go")
+
+[node name="SpawnPoint3D" type="Area3D"]
+script = ExtResource("1_0iqtu")
+spawn_icon = null
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_sry8n")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+pixel_size = 0.001
+billboard = 1
+no_depth_test = true
+fixed_size = true
+texture = ExtResource("2_qtouj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_blg50")

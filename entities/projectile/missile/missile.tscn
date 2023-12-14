@@ -14,7 +14,7 @@ material_override = ExtResource("2_fcbu0")
 mesh = ExtResource("2_01tk1")
 
 [node name="missile_flame" type="MeshInstance3D" parent="." index="4"]
-transform = Transform3D(0.482008, -0.876167, 0, 0.876167, 0.482008, 0, 0, 0, 1, 0, 0, 0.8)
+transform = Transform3D(-0.837548, -0.546363, 0, 0.546363, -0.837548, 0, 0, 0, 1, 0, 0, 0.8)
 material_override = ExtResource("3_qagqw")
 mesh = ExtResource("3_7uvj3")
 script = ExtResource("4_yxadg")

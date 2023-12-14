@@ -1,4 +1,4 @@
-[gd_scene load_steps=130 format=3 uid="uid://b3apavtu2p5ha"]
+[gd_scene load_steps=132 format=3 uid="uid://b3apavtu2p5ha"]
 
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_blocks.gd" id="1_nntvb"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_convex_block.gd" id="2_ppj3n"]
@@ -14,6 +14,8 @@
 [ext_resource type="Material" uid="uid://cuje6s6embdv4" path="res://materials/aqconc07.tres" id="12_3vd8r"]
 [ext_resource type="Material" uid="uid://b2vpfv83a2yp4" path="res://materials/aqlite18.tres" id="13_waf2g"]
 [ext_resource type="Material" uid="uid://cyt1qyo80utau" path="res://materials/w32_5.tres" id="14_d7fvf"]
+[ext_resource type="Script" path="res://entities/level_entities/PlayerSpawn3D.gd" id="15_u7bji"]
+[ext_resource type="Texture2D" uid="uid://bdbggyuul3asp" path="res://entities/level_entities/player_spawn.png" id="16_oxqlh"]
 
 [sub_resource type="Resource" id="Resource_10y57"]
 script = ExtResource("5_o8qyw")
@@ -2892,3 +2894,8 @@ block_data = SubResource("Resource_2s2fx")
 script = ExtResource("2_ppj3n")
 materials = Array[Material]([ExtResource("11_cbtfn")])
 block_data = SubResource("Resource_1kpua")
+
+[node name="PlayerSpawn3D" type="Area3D" parent="."]
+transform = Transform3D(-1, 2.11758e-22, 8.74228e-08, -2.68658e-16, 1, -7.35137e-08, -8.74228e-08, -7.35137e-08, -1, 0, 0, -3)
+script = ExtResource("15_u7bji")
+spawn_icon = ExtResource("16_oxqlh")
