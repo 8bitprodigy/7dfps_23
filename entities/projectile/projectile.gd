@@ -17,6 +17,13 @@ func spawn(firer:ProjectileEmitter) -> void:
 		await get_tree().create_timer(lifespan).timeout
 		queue_free()
 		
+func spawn_from_weapon(firer:weapon_base) -> void:
+	global_transform = firer.global_transform
+	target_position = Vector3.FORWARD*projectile_length #firer.global_transform.basis.z * projectile_length
+	add_exception(firer.get_owning_controller())
+	if lifespan > 0.0:
+		await get_tree().create_timer(lifespan).timeout
+		queue_free()
 
 #var old_position : Vector3 = Vector3.ZERO
 # Called every frame. 'delta' is the elapsed time since the previous frame.

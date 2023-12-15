@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8kdss0rbyjka"]
+
+[ext_resource type="Script" path="res://components/Weapons/laser_beam.gd" id="1_bhexq"]
+
+[sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_uhu7o"]
+
+[node name="LaserBeam" type="MeshInstance3D"]
+mesh = SubResource("RibbonTrailMesh_uhu7o")
+script = ExtResource("1_bhexq")

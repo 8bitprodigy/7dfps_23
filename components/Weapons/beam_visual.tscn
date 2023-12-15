@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://do4wwhqa3k0y2"]
+
+[node name="BeamVisual" type="Node3D"]

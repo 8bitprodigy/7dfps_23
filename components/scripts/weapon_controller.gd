@@ -1,14 +1,15 @@
 extends Node3D
+
 class_name WeaponController
 
+@export var weapon_array: Array
 
-@export var CurrentWeapon : weapon_base
-
-var is_primary_firing : bool = false
-var is_secondary_firing : bool = false
-
-var was_primary_firing : bool = false
-var was_secondary_firing : bool = false
+func _enter_tree():
+	# store child weapons in weapon_array
+	for child in get_children():
+		if child is weapon_base:
+			weapon_array.push_back(child)
+	pass
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -16,29 +17,21 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-		
-	if is_primary_firing && !was_primary_firing: start_primary_fire()
-	if !is_primary_firing && was_primary_firing: stop_primary_fire()
 	
-	if is_secondary_firing && !was_secondary_firing: start_secondary_fire()
-	if !is_secondary_firing && was_secondary_firing: stop_secondary_fire()
-	
-	was_primary_firing = is_primary_firing
-	was_secondary_firing = is_secondary_firing
 	pass
 
-func start_primary_fire():
-	CurrentWeapon.start_primary_fire()
+func start_fire(weapon_idx: int):
+	if weapon_idx >= weapon_array.size():
+		prints("Trying to start_fire() on nonexistent weapon in weapon_array!!!")
+		return
+	weapon_array[weapon_idx].start_fire()
 	pass
 	
-func stop_primary_fire():
-	CurrentWeapon.stop_primary_fire()
-	pass
+func stop_fire(weapon_idx: int):
+	if weapon_idx >= weapon_array.size():
+		prints("Trying to stop_fire() on nonexistent weapon in weapon_array!!!")
+		return
+	weapon_array[weapon_idx].stop_fire()
 
-func start_secondary_fire():
-	CurrentWeapon.start_secondary_fire()
-	pass
-	
-func stop_secondary_fire():
-	CurrentWeapon.stop_secondary_fire()
-	pass
+func get_owning_controller() -> SixDOFController:
+	return get_parent()

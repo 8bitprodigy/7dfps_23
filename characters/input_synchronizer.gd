@@ -18,16 +18,16 @@ func _input(event):
 		rotation_vector.x = -event.relative.y
 		rotation_vector.y = -event.relative.x
 	
-	if Input.is_action_pressed("primary_fire"):
-		is_primary_firing=true
-		#parent.get_node("projectile_emitter").fire()
-	else: is_primary_firing=false
+	if Input.is_action_just_pressed("primary_fire"):
+		parent.weapon_controller.start_fire(0)
+	if Input.is_action_just_released("primary_fire"):
+		parent.weapon_controller.stop_fire(0)
 	
-	if Input.is_action_pressed("secondary_fire"):
-		is_secondary_firing=true
-		#parent.get_node("projectile_emitter").fire()
-	else: is_secondary_firing=false
-	
+	if Input.is_action_just_pressed("secondary_fire"):
+		parent.weapon_controller.start_fire(1)
+	if Input.is_action_just_released("secondary_fire"):
+		parent.weapon_controller.stop_fire(1)
+		
 	if Input.is_action_just_pressed("quit"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) or Input.is_mouse_button_pressed(MOUSE_BUTTON_MIDDLE) or Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT):
