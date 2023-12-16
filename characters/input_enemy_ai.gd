@@ -23,8 +23,10 @@ func _process(delta):
 
 
 func AI_tick():
+	if !get_parent().active: return
 	if ! player_list:
 		player_list = get_tree().get_nodes_in_group("players")
+	if !player_list[0].active: return
 	target_player = player_list[0]
 	for player in player_list:
 		if parent.global_position.distance_to(player.global_position) < parent.global_position.distance_to(target_player.global_position):
@@ -51,7 +53,7 @@ func AI_tick():
 	else: movement_vector.z = 0
 	
 	var fire_dot : float = parent.basis.z.dot((parent.global_position-target_player.global_position).normalized())
-	prints("Fire Dot Product: ", fire_dot)
+	#prints("Fire Dot Product: ", fire_dot)
 	if fire_dot > 0.85:
 		is_primary_firing = true
 	else: is_primary_firing = false

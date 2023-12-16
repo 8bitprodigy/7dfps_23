@@ -6,7 +6,9 @@ class_name HealthPickup
 
 
 func _on_body_entered(body):
-	if !body.has_node("health_component"):return
-	if !body.get_node("health_component") is HealthComponent: return
-	body.get_node("health_component").heal(healing_amount)
+	if !body.has_node("HealthComponent"):return
+	if !(body.get_node("HealthComponent") is HealthComponent): return
+	var health_component : HealthComponent = body.get_node("HealthComponent")
+	if health_component.health == health_component.MAX_HEALTH: return
+	health_component.heal(healing_amount)
 	super._on_body_entered(body)

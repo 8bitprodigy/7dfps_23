@@ -1,4 +1,4 @@
-[gd_scene load_steps=133 format=3 uid="uid://b3apavtu2p5ha"]
+[gd_scene load_steps=134 format=3 uid="uid://b3apavtu2p5ha"]
 
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_blocks.gd" id="1_nntvb"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_convex_block.gd" id="2_ppj3n"]
@@ -17,6 +17,7 @@
 [ext_resource type="Script" path="res://entities/level_entities/PlayerSpawn3D.gd" id="15_u7bji"]
 [ext_resource type="Texture2D" uid="uid://bdbggyuul3asp" path="res://entities/level_entities/player_spawn.png" id="16_oxqlh"]
 [ext_resource type="PackedScene" uid="uid://c1y33jel7vir0" path="res://entities/level_entities/mob_generator.tscn" id="17_doxav"]
+[ext_resource type="PackedScene" uid="uid://cqw46ftrjjje8" path="res://entities/pickups/health_pickup.tscn" id="18_ho3yo"]
 
 [sub_resource type="Resource" id="Resource_10y57"]
 script = ExtResource("5_o8qyw")
@@ -2902,4 +2903,16 @@ script = ExtResource("15_u7bji")
 spawn_icon = ExtResource("16_oxqlh")
 
 [node name="MobGenerator" parent="." instance=ExtResource("17_doxav")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36872, -7.0886, 50.716)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36872, -6.0886, 47.716)
+
+[node name="health_pickup" parent="." instance=ExtResource("18_ho3yo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.41112, -4, 35.9326)
+
+[node name="health_pickup2" parent="." instance=ExtResource("18_ho3yo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.41112, -4, 35.9326)
+
+[node name="health_pickup3" parent="." instance=ExtResource("18_ho3yo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4111, -4, 35.9326)
+
+[node name="health_pickup4" parent="." instance=ExtResource("18_ho3yo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.41112, -4, 35.9326)

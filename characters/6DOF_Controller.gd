@@ -1,7 +1,9 @@
 extends CharacterBody3D
 class_name SixDOFController
 
-@export var SPEED : float = 100.0
+@export var active : bool = true
+
+@export var SPEED  : float = 100.0
 @export var THROTTLE_MULTIPLIER : float = 2.0
 @export var ACCELERATION : float = 5.0
 
@@ -30,6 +32,9 @@ func _enter_tree():
 
 
 func _physics_process(delta):
+	if !active: 
+		get_node("CollisionShape3D").disabled = true
+		return
 	if !input_node: return
 	angular_velocity.x = lerp(angular_velocity.x,input_node.rotation_vector.x/200,delta*ACCELERATION)
 	angular_velocity.y = lerp(angular_velocity.y,input_node.rotation_vector.y/200,delta*ACCELERATION)

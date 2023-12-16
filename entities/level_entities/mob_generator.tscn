@@ -40,12 +40,13 @@ alpha_cut = 1
 texture = SubResource("AnimatedTexture_jfdkl")
 
 [node name="SpawnPoint3D" type="Area3D" parent="."]
-visible = false
 script = ExtResource("1_35l8r")
 
 [node name="ShapeCast3D" type="ShapeCast3D" parent="."]
 shape = SubResource("SphereShape3D_sreh4")
 target_position = Vector3(0, 0, -1)
+
+[node name="Marker3D" type="Marker3D" parent="ShapeCast3D"]
 
 [node name="Area3D" type="Area3D" parent="."]
 collision_layer = 2
