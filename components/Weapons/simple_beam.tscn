@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvjgd4c6qmoef"]
+
+[ext_resource type="Script" path="res://components/Weapons/simple_beam.gd" id="1_nhmxq"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_lt8w5"]
+flip_faces = true
+top_radius = 0.1
+bottom_radius = 0.1
+
+[node name="SimpleBeam" type="Node3D"]
+script = ExtResource("1_nhmxq")
+
+[node name="BeamMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_lt8w5")

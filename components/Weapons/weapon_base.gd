@@ -60,19 +60,21 @@ func _handle_fire():
 	if projectile_type != null:
 		fire_projectile(transform.basis.z)
 	else:
-		fire_hitscan(transform.basis.z)
+		var hit: Dictionary = fire_hitscan()
+		if !hit.is_empty(): _on_hitscan_hit(hit)
 
 func fire_hitscan(direction: Vector3 = Vector3(0,0,0)) -> Dictionary:
 	var space = get_world_3d().direct_space_state
 	
 	# if no direction is given, use transform Z as forward
 	if direction == Vector3(0,0,0): 
-		direction = transform.basis.z
+		direction = -get_owning_controller().basis.z
 	
-	var origin = transform.origin
+	var origin = global_position
 	var end = origin + direction.normalized() * hitscan_range
 	
 	var query = PhysicsRayQueryParameters3D.create(origin, end)	
+	
 	query.hit_from_inside = false
 	
 	var hit = space.intersect_ray(query)
