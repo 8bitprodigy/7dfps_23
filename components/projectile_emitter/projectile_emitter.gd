@@ -14,7 +14,7 @@ func _ready():
 
 func _enter_tree():
 	if multiplayer.is_server():
-		prints("ProjectileEmitter entered tree!")
+		#prints("ProjectileEmitter entered tree!")
 		MultiplayerManager.register_gun(multiplayer.get_unique_id(),self)
 	pass
 

@@ -33,12 +33,12 @@ func _physics_process(delta) -> void:
 	force_shapecast_update()
 	var collision_count : int = get_collision_count()
 	if collision_count > 0:
-		prints("Projectile hit!")
+		#prints("Projectile hit!")
 		for i:int in range(0,collision_count):
-			prints("Projectile collider ", i, ": ", get_collider(i))
+			#prints("Projectile collider ", i, ": ", get_collider(i))
 			if get_collider(i).has_node("hitbox_component"):
 				if get_collider(i).get_node("hitbox_component") is HitboxComponent:
-					prints("Projectile damaging ", get_collider(i))
+					#prints("Projectile damaging ", get_collider(i))
 					get_collider(i).get_node("hitbox_component").damage(attack)
 		set_physics_process(false)
 		$MeshInstance3D.hide()

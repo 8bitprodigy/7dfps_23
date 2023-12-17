@@ -19,7 +19,7 @@ func _enter_tree():
 	new_collision_shape.shape.radius           = radius
 	add_child(new_collision_shape)
 	
-	if !Engine.is_editor_hint(): return
+	#if !Engine.is_editor_hint(): return
 	# This stuff is only to visualize the spawn point in the editor
 	#add_gizmo(EditorNode3DGizmo.new())
 	

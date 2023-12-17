@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1jds1ihp5n5j"
-path.s3tc="res://.godot/imported/spark_06.png-2149877f56d761f9fef62e5b224acc12.s3tc.ctex"
+uid="uid://b3pdqdad7ax2d"
+path.s3tc="res://.godot/imported/beams.png-cd0a6d950fdb1eae5bc2879dbe74e491.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://addons/kenney_particle_pack/spark_06.png"
-dest_files=["res://.godot/imported/spark_06.png-2149877f56d761f9fef62e5b224acc12.s3tc.ctex"]
+source_file="res://components/beams.png"
+dest_files=["res://.godot/imported/beams.png-cd0a6d950fdb1eae5bc2879dbe74e491.s3tc.ctex"]
 
 [params]
 

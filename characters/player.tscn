@@ -52,6 +52,7 @@ script = ExtResource("1_vdimn")
 input_node = NodePath("input_synchronizer")
 
 [node name="HealthComponent" parent="." instance=ExtResource("2_mirph")]
+MAX_HEALTH = 50.0
 
 [node name="hitbox_component" parent="." instance=ExtResource("3_p8ced")]
 

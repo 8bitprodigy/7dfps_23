@@ -9,36 +9,29 @@
 [sub_resource type="SphereShape3D" id="SphereShape3D_628n4"]
 radius = 0.125
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_i04ro"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_gc5d1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_s13o5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_t4du0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_7ey58")
-}],
-"loop": true,
-"name": &"default",
-"speed": 6.0
-}]
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_prjty"]
+frames = 4
+frame_0/texture = ExtResource("2_gc5d1")
+frame_0/duration = 0.25
+frame_1/texture = ExtResource("3_s13o5")
+frame_1/duration = 0.25
+frame_2/texture = ExtResource("4_t4du0")
+frame_2/duration = 0.25
+frame_3/texture = ExtResource("5_7ey58")
+frame_3/duration = 0.25
 
 [node name="health_pickup" type="Area3D"]
+collision_layer = 0
+collision_mask = 2
 script = ExtResource("1_dr74t")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_628n4")
 
-[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+[node name="Sprite3D" type="Sprite3D" parent="."]
 pixel_size = 0.02
 billboard = 1
-sprite_frames = SubResource("SpriteFrames_i04ro")
-frame_progress = 0.773973
+alpha_cut = 1
+texture = SubResource("AnimatedTexture_prjty")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
