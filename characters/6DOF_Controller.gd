@@ -10,8 +10,7 @@ class_name SixDOFController
 
 var angular_velocity : Vector3 = Vector3.ZERO
 
-
-@onready var weapon_controller = $weapon_controller
+@onready var weapon_controller = $WeaponController
 
 # Player synchronized input.
 @export var input_node : Node
@@ -44,8 +43,8 @@ func _physics_process(delta):
 	rotate(basis.y.normalized(), angular_velocity.y)
 	rotate(basis.z.normalized(), angular_velocity.z)
 	
-	if input_node.is_primary_firing:
-		$ProjectileEmitter.fire()
+	#if input_node.is_primary_firing:
+	#	$ProjectileEmitter.fire()
 	
 	var speed : float = clampf(Input.get_action_strength("throttle") * THROTTLE_MULTIPLIER , 1.0, THROTTLE_MULTIPLIER) * SPEED
 	var direction : Vector3 = (

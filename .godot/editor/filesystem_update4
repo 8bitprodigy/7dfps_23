@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://default_bus_layout.tres
 res://entities/level_entities/mob_generator.tscn
 res://addons/cyclops_level_builder/shaders/outline_shader.tres
@@ -73,3 +74,20 @@ res://entities/projectile/projectile.gd
 res://entities/projectile/pulse.res
 res://components/Beam3D.gd
 res://components/beam_3d.tscn
+=======
+res://levels/danTest.tscn
+res://addons/cyclops_level_builder/shaders/outline_shader.tres
+res://addons/cyclops_level_builder/docks/material_palette/thumbnail_selected_theme.tres
+res://addons/cyclops_level_builder/docks/material_palette/thumbnail_normal_theme.tres
+res://materials/animated/water.tres
+res://materials/animated/watrfall.tres
+res://materials/animated/FIREBLU.tres
+res://entities/projectile/missile/missile_flame_mat.tres
+res://characters/input_synchronizer.gd
+res://components/Weapons/weapon_base.gd
+res://main.tscn
+res://components/scripts/weapon_controller.gd
+res://characters/player.tscn
+res://characters/6DOF_Controller.gd
+res://entities/projectile/projectile.gd
+>>>>>>> Dan

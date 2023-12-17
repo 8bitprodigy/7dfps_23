@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnhqt01yh2iek"]
+
+[ext_resource type="Script" path="res://components/Weapons/grapple_gun.gd" id="1_nj0hm"]
+[ext_resource type="PackedScene" uid="uid://cvjgd4c6qmoef" path="res://components/Weapons/simple_beam.tscn" id="3_bmrw6"]
+
+[node name="GrappleGun" type="Node3D"]
+script = ExtResource("1_nj0hm")
+
+[node name="SimpleBeam" parent="." instance=ExtResource("3_bmrw6")]
