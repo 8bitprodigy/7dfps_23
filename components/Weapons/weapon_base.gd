@@ -81,7 +81,7 @@ func fire_hitscan(direction: Vector3 = Vector3(0,0,0)) -> Dictionary:
 		
 	return hit
 	
-func fire_projectile(direction: Vector3 = Vector3(0,0,0)):
+func fire_projectile(direction: Vector3 = Vector3(0,0,0)) -> Projectile:
 	# if no direction is given, use transform Z as forward
 	if direction == Vector3(0,0,0): 
 		direction = transform.basis.z
@@ -90,6 +90,7 @@ func fire_projectile(direction: Vector3 = Vector3(0,0,0)):
 	get_tree().root.add_child(new_projectile)
 	new_projectile.add_exception(get_owning_controller())
 	new_projectile.spawn_from_weapon(self)
+	return new_projectile
 
 func _on_hitscan_hit(hit_dict: Dictionary):
 	# DICTIONARY CONTENTS:

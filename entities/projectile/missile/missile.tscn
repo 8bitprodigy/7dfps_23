@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://3lm7x1gpwi6f"]
+[gd_scene load_steps=8 format=3 uid="uid://3lm7x1gpwi6f"]
 
 [ext_resource type="PackedScene" uid="uid://bpjsgdditf1xx" path="res://entities/projectile/projectile.tscn" id="1_q06rq"]
 [ext_resource type="ArrayMesh" uid="uid://bj4v00d7lmppl" path="res://entities/projectile/missile/missile.res" id="2_01tk1"]
@@ -6,15 +6,29 @@
 [ext_resource type="ArrayMesh" uid="uid://cujw3fk2wshv1" path="res://entities/projectile/missile/missile_flame.res" id="3_7uvj3"]
 [ext_resource type="Material" uid="uid://bk4muxo3322f" path="res://entities/projectile/missile/missile_flame_mat.tres" id="3_qagqw"]
 [ext_resource type="Script" path="res://entities/projectile/missile/missile_flame.gd" id="4_yxadg"]
+[ext_resource type="Script" path="res://entities/projectile/missile/missile_guidance.gd" id="7_t6vhw"]
 
 [node name="missile" instance=ExtResource("1_q06rq")]
 
 [node name="MeshInstance3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0416975, -0.0152214, -0.175694)
 material_override = ExtResource("2_fcbu0")
 mesh = ExtResource("2_01tk1")
 
-[node name="missile_flame" type="MeshInstance3D" parent="." index="4"]
-transform = Transform3D(-0.623889, 0.416248, 0, -0.416248, -0.623889, 0, 0, 0, 0.75, 0, 0, 0.8)
+[node name="missile_flame" type="MeshInstance3D" parent="MeshInstance3D" index="0"]
+transform = Transform3D(-0.0506599, -0.748287, 0, 0.748287, -0.0506599, 0, 0, 0, 0.75, 0, 0, 0.8)
 material_override = ExtResource("3_qagqw")
 mesh = ExtResource("3_7uvj3")
+skeleton = NodePath("../..")
 script = ExtResource("4_yxadg")
+
+[node name="start_pos" parent="." index="2"]
+visible = true
+
+[node name="end_pos" parent="." index="3"]
+visible = true
+
+[node name="MissileGuidance" type="Node" parent="." index="5"]
+script = ExtResource("7_t6vhw")
+correction_accel = 40.0
+min_correction_strength = 0.8

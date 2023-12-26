@@ -7,7 +7,6 @@ var grapple_hit : bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$SimpleBeam.visible = false
 	$Beam3D.visible = false
 	projectile_type = null
 	pass # Replace with function body.

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2iygxsb3vpi3"]
+
+[ext_resource type="Script" path="res://components/Weapons/targeting_weapon.gd" id="1_wlj1m"]
+[ext_resource type="PackedScene" uid="uid://3lm7x1gpwi6f" path="res://entities/projectile/missile/missile.tscn" id="2_ykq66"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_etn1h"]
+radius = 15.0
+height = 50.0
+
+[node name="MissileLauncher" type="Node3D"]
+script = ExtResource("1_wlj1m")
+projectile_type = ExtResource("2_ykq66")
+
+[node name="TargetArea" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TargetArea"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -25)
+shape = SubResource("CapsuleShape3D_etn1h")

@@ -1,9 +1,17 @@
 extends ShapeCast3D
 
-@export var speed             : float = 10.0
+class_name Projectile
+
+@export var launch_speed      : float = 10.0
 @export var lifespan          : float = 10.0
 @export var projectile_length : float = 1.0
 @export var attack            : AttackInfo
+
+var velocity                 : Vector3
+
+#for child targeting components
+var target : Node3D
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -11,6 +19,7 @@ func _ready() -> void:
 
 func spawn(firer:ProjectileEmitter) -> void:
 	global_transform = firer.global_transform
+	velocity = -global_transform.basis.z.normalized() * launch_speed
 	target_position = Vector3.FORWARD*projectile_length #firer.global_transform.basis.z * projectile_length
 	add_exception(firer.parent)
 	if lifespan > 0.0:
@@ -19,6 +28,7 @@ func spawn(firer:ProjectileEmitter) -> void:
 		
 func spawn_from_weapon(firer:weapon_base) -> void:
 	global_transform = firer.global_transform
+	velocity = -global_transform.basis.z.normalized() * launch_speed
 	target_position = Vector3.FORWARD*projectile_length #firer.global_transform.basis.z * projectile_length
 	add_exception(firer.get_owning_controller())
 	if lifespan > 0.0:
@@ -28,9 +38,11 @@ func spawn_from_weapon(firer:weapon_base) -> void:
 #var old_position : Vector3 = Vector3.ZERO
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta) -> void:
-	global_position = global_position + (target_position.length()*-global_transform.basis.z.normalized())
-	target_position =(Vector3.FORWARD*speed) * delta
-	force_shapecast_update()
+	
+	global_position = global_position + (velocity * delta)
+	target_position =(Vector3.FORWARD*launch_speed) * delta
+	
+	#force_shapecast_update()
 	var collision_count : int = get_collision_count()
 	if collision_count > 0:
 		#prints("Projectile hit!")
@@ -47,3 +59,9 @@ func _physics_process(delta) -> void:
 		$AnimatedSprite3D.play("default")
 		await $AnimatedSprite3D.animation_looped
 		queue_free()
+
+func get_mesh() -> MeshInstance3D:
+	return $MeshInstance3D
+
+func orient_mesh(direction : Vector3):
+	get_mesh().look_at(global_position + direction)

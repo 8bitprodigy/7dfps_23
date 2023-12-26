@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://i444byfpcb5o" path="res://components/health_component/health_component.tscn" id="2_mirph"]
 [ext_resource type="PackedScene" uid="uid://dned7nntadaxx" path="res://components/hitbox_component.tscn" id="3_p8ced"]
 [ext_resource type="PackedScene" uid="uid://blub1slabs8rk" path="res://components/input_synchronizer.tscn" id="4_37g7b"]
-[ext_resource type="Script" path="res://components/Weapons/weapon_base.gd" id="6_j88dd"]
+[ext_resource type="PackedScene" uid="uid://c2iygxsb3vpi3" path="res://components/Weapons/missile_launcher.tscn" id="6_fqgyc"]
 [ext_resource type="PackedScene" uid="uid://de6605x8vyoe" path="res://components/scripts/weapon_controller.tscn" id="6_u5ptg"]
 [ext_resource type="PackedScene" uid="uid://dnhqt01yh2iek" path="res://components/Weapons/grapple_gun.tscn" id="7_vjs21"]
 
@@ -95,10 +95,8 @@ uppercase = true
 
 [node name="WeaponController" parent="." instance=ExtResource("6_u5ptg")]
 
-[node name="weapon_base" type="Node3D" parent="WeaponController"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.468362, 0)
-script = ExtResource("6_j88dd")
-burst_cooldown = 0.6
+[node name="MissileLauncher" parent="WeaponController" instance=ExtResource("6_fqgyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.578191, 0)
 
 [node name="GrappleGun" parent="WeaponController" instance=ExtResource("7_vjs21")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, -0.359228, 0)

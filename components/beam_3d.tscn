@@ -4,10 +4,10 @@
 [ext_resource type="Script" path="res://components/Beam3D.gd" id="2_0oy2c"]
 
 [node name="Beam3D" type="Sprite3D"]
-transform = Transform3D(0.052958, -0.99821, 0, 0.926747, 0.0491739, -0.370792, 0.370699, 0.0196696, 0.92698, 0, 0, 0)
+transform = Transform3D(-0.060074, -0.997807, 0, 0.926373, -0.0557814, -0.370792, 0.370549, -0.0223125, 0.92698, 0, 0, 0)
 centered = false
 offset = Vector2(-64, 0)
-flip_v = true
+flip_h = true
 axis = 1
 alpha_cut = 1
 alpha_hash_scale = 0.98
@@ -15,7 +15,7 @@ alpha_antialiasing_mode = 1
 texture_filter = 1
 texture = ExtResource("1_r3a27")
 region_enabled = true
-region_rect = Rect2(128, 185.297, 128, 1078.77)
+region_rect = Rect2(0, 306.669, 128, 1078.77)
 script = ExtResource("2_0oy2c")
 target_point = Vector3(0, 4, -10)
 frames = 4
